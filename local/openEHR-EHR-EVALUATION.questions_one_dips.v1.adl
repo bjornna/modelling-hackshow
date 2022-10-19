@@ -1,0 +1,113 @@
+archetype (adl_version=1.4; uid=72f26189-df12-49ce-8624-8223ab7328d8)
+	openEHR-EHR-EVALUATION.questions_one_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2022-10-20">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"1ca751cb931634a479c30e672ab0f0cd">
+		["build_uid"] = <"25ba4827-8f60-3480-969a-e4fd8123a6f8">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- questions_one_dips
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Kontroll spørsmål
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Oppfølgingsspørsmål
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0004,    -- Svar A
+									at0005,    -- Svar B
+									at0006]    -- Svar C
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0007] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Sist oppdatert
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"questions_one_dips">
+					description = <"questions_one_dips">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Kontroll spørsmål">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Oppfølgingsspørsmål">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Svar A">
+					description = <"Det første og beste svaret?">
+				>
+				["at0005"] = <
+					text = <"Svar B">
+					description = <"Eller kanskje dette er enda bedre enn det forrige?">
+				>
+				["at0006"] = <
+					text = <"Svar C">
+					description = <"Neida - det siste er alltid best">
+				>
+				["at0007"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0008"] = <
+					text = <"Sist oppdatert">
+					description = <"">
+				>
+			>
+		>
+	>
