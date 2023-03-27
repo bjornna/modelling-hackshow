@@ -108,7 +108,7 @@ The 'Grade' data element provides a choice of data types - allowing the selectio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6A15294983E2FBD0D5377261957B20A9">
+		["MD5-CAM-1.0.1"] = <"19207cc6026cc21b9babd146abfb12f6">
 		["build_uid"] = <"69cde4de-9348-4747-8ac3-c88b3fb58618">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -128,7 +128,11 @@ definition
 			}
 			ELEMENT[at0003] matches {    -- Grade
 				value matches {
-					DV_ORDINAL matches {*}
+					1|[local::at0015],
+					2|[local::at0016],
+					3|[local::at0017],
+					4|[local::at0018],
+					5|[local::at0019]
 					DV_TEXT matches {*}
 					1.0|[local::at0010],
 					2.0|[local::at0011],
@@ -192,6 +196,26 @@ ontology
 					text = <"Grade 5">
 					description = <"Death related to AE.">
 				>
+				["at0015"] = <
+					text = <"*Grad 1 (nb)">
+					description = <"*Mild, ELLER asymptomatisk eller milde symptomer, ELLER kun kliniske eller diagnostiske observasjoner, ELLER ikke grunnlag for intervensjon. (nb)">
+				>
+				["at0016"] = <
+					text = <"*Grad 2 (nb)">
+					description = <"*Moderat, ELLER minimal, lokal eller indikasjon for ikke-invasiv intervensjon, ELLER begrenser alders-tilpasset ADL. (nb)">
+				>
+				["at0017"] = <
+					text = <"*Grad 3 (nb)">
+					description = <"*Alvorlig eller medisinsk betydningsfull, men ikke umiddelbart livstruende, ELLER indikasjon for sykehusinnleggelse eller forlengelse av sykehusopphold, ELLER invalidiserende, begrenset evne til egenomsorg og ADL. (nb)">
+				>
+				["at0018"] = <
+					text = <"*Grad 4 (nb)">
+					description = <"*Livstruende konsekvenser, ELLER indikasjon for øyeblikkelig intervensjon. (nb)">
+				>
+				["at0019"] = <
+					text = <"*Grad 5 (nb)">
+					description = <"*Død relatert til uønsket medisinsk hendelse. (nb)">
+				>
 			>
 		>
 		["de"] = <
@@ -238,6 +262,26 @@ ontology
 				["at0014"] = <
 					text = <"*Grade 5 (en)">
 					description = <"*Death related to AE. (en)">
+				>
+				["at0015"] = <
+					text = <"*Grad 1 (nb)">
+					description = <"*Mild, ELLER asymptomatisk eller milde symptomer, ELLER kun kliniske eller diagnostiske observasjoner, ELLER ikke grunnlag for intervensjon. (nb)">
+				>
+				["at0016"] = <
+					text = <"*Grad 2 (nb)">
+					description = <"*Moderat, ELLER minimal, lokal eller indikasjon for ikke-invasiv intervensjon, ELLER begrenser alders-tilpasset ADL. (nb)">
+				>
+				["at0017"] = <
+					text = <"*Grad 3 (nb)">
+					description = <"*Alvorlig eller medisinsk betydningsfull, men ikke umiddelbart livstruende, ELLER indikasjon for sykehusinnleggelse eller forlengelse av sykehusopphold, ELLER invalidiserende, begrenset evne til egenomsorg og ADL. (nb)">
+				>
+				["at0018"] = <
+					text = <"*Grad 4 (nb)">
+					description = <"*Livstruende konsekvenser, ELLER indikasjon for øyeblikkelig intervensjon. (nb)">
+				>
+				["at0019"] = <
+					text = <"*Grad 5 (nb)">
+					description = <"*Død relatert til uønsket medisinsk hendelse. (nb)">
 				>
 			>
 		>
@@ -286,6 +330,26 @@ ontology
 					text = <"*Grade 5 (en)">
 					description = <"*Death related to AE. (en)">
 				>
+				["at0015"] = <
+					text = <"*Grad 1 (nb)">
+					description = <"*Mild, ELLER asymptomatisk eller milde symptomer, ELLER kun kliniske eller diagnostiske observasjoner, ELLER ikke grunnlag for intervensjon. (nb)">
+				>
+				["at0016"] = <
+					text = <"*Grad 2 (nb)">
+					description = <"*Moderat, ELLER minimal, lokal eller indikasjon for ikke-invasiv intervensjon, ELLER begrenser alders-tilpasset ADL. (nb)">
+				>
+				["at0017"] = <
+					text = <"*Grad 3 (nb)">
+					description = <"*Alvorlig eller medisinsk betydningsfull, men ikke umiddelbart livstruende, ELLER indikasjon for sykehusinnleggelse eller forlengelse av sykehusopphold, ELLER invalidiserende, begrenset evne til egenomsorg og ADL. (nb)">
+				>
+				["at0018"] = <
+					text = <"*Grad 4 (nb)">
+					description = <"*Livstruende konsekvenser, ELLER indikasjon for øyeblikkelig intervensjon. (nb)">
+				>
+				["at0019"] = <
+					text = <"*Grad 5 (nb)">
+					description = <"*Død relatert til uønsket medisinsk hendelse. (nb)">
+				>
 			>
 		>
 		["nb"] = <
@@ -330,6 +394,26 @@ ontology
 					description = <"Livstruende konsekvenser, ELLER indikasjon for øyeblikkelig intervensjon.">
 				>
 				["at0014"] = <
+					text = <"Grad 5">
+					description = <"Død relatert til uønsket medisinsk hendelse.">
+				>
+				["at0015"] = <
+					text = <"Grad 1">
+					description = <"Mild, ELLER asymptomatisk eller milde symptomer, ELLER kun kliniske eller diagnostiske observasjoner, ELLER ikke grunnlag for intervensjon.">
+				>
+				["at0016"] = <
+					text = <"Grad 2">
+					description = <"Moderat, ELLER minimal, lokal eller indikasjon for ikke-invasiv intervensjon, ELLER begrenser alders-tilpasset ADL.">
+				>
+				["at0017"] = <
+					text = <"Grad 3">
+					description = <"Alvorlig eller medisinsk betydningsfull, men ikke umiddelbart livstruende, ELLER indikasjon for sykehusinnleggelse eller forlengelse av sykehusopphold, ELLER invalidiserende, begrenset evne til egenomsorg og ADL.">
+				>
+				["at0018"] = <
+					text = <"Grad 4">
+					description = <"Livstruende konsekvenser, ELLER indikasjon for øyeblikkelig intervensjon.">
+				>
+				["at0019"] = <
 					text = <"Grad 5">
 					description = <"Død relatert til uønsket medisinsk hendelse.">
 				>
