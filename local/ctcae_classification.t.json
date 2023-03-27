@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "5ac2db1bc98a8e16fe5eabadf27cd98a",
+      "MD5-CAM-1.0.1" : "7f6f1452313fe73c27a9738765412b57",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -795,112 +795,112 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "CTCAE-GROUP"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "CTCAE-GROUP" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1001",
                     "value" : "Blood and lymphatic system disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1002",
                     "value" : "Cardiac disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1003",
                     "value" : "Congenital, familial and genetic disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1004",
                     "value" : "Ear and labyrinth disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1005",
                     "value" : "Endocrine disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1006",
                     "value" : "Eye disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1007",
                     "value" : "Gastrointestinal disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1008",
                     "value" : "General disorders and administration site conditions"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1009",
                     "value" : "Hepatobiliary disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1010",
                     "value" : "Immune system disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1011",
                     "value" : "Infections and infestations"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1012",
                     "value" : "Injury, poisoning and procedural complications"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1013",
                     "value" : "Investigations"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1014",
                     "value" : "Metabolism and nutrition disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1015",
                     "value" : "Musculoskeletal and connective tissue disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1016",
                     "value" : "Neoplasms benign, malignant and unspecified (incl cysts and polyps)"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1017",
                     "value" : "Nervous system disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1018",
                     "value" : "Pregnancy, puerperium and perinatal conditions"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1019",
                     "value" : "Psychiatric disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1020",
                     "value" : "Renal and urinary disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1021",
                     "value" : "Reproductive system and breast disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1022",
                     "value" : "Respiratory, thoracic and mediastinal disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1023",
                     "value" : "Skin and subcutaneous tissue disorders"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1024",
                     "value" : "Social circumstances"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1025",
                     "value" : "Surgical and medical procedures"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "CTCAE-GROUP",
                     "code" : "1026",
                     "value" : "Vascular disorders"
                   } ]
