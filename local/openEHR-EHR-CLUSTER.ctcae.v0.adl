@@ -108,7 +108,7 @@ The 'Grade' data element provides a choice of data types - allowing the selectio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5b16d85db086cd8bd38dcdd7a0f8d808">
+		["MD5-CAM-1.0.1"] = <"9472f8b89726ee20d274ad795bf1e538">
 		["build_uid"] = <"69cde4de-9348-4747-8ac3-c88b3fb58618">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -349,7 +349,7 @@ ontology
 					description = <"Død relatert til uønsket medisinsk hendelse.">
 				>
 				["at0020"] = <
-					text = <"*Grade classification (en)">
+					text = <"Grade classification">
 					description = <"">
 				>
 			>
