@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD",
-      "MD5-CAM-1.0.1" : "c3d1173c29360d892cf78807f46adb2c"
+      "MD5-CAM-1.0.1" : "db7faa99ee3093381cbb568e1c1eb54f"
     },
     "details" : {
       "de" : {
@@ -952,7 +952,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5b16d85db086cd8bd38dcdd7a0f8d808"
+        "PARENT:MD5-CAM-1.0.1" : "9472f8b89726ee20d274ad795bf1e538"
       },
       "details" : {
         "de" : {
@@ -1165,16 +1165,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0003.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
