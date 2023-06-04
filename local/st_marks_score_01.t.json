@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b5ac42c1f7fa2d73c4e9edf89c371879",
+      "MD5-CAM-1.0.1" : "56666012eab54918f4b2c6a5a609d043",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -414,7 +414,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "occurrences" : "0..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -503,14 +502,7 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : {
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "I dag",
-            "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
-          }
-        }
+        "nb" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
