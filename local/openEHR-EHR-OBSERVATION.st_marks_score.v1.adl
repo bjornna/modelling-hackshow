@@ -54,7 +54,7 @@ Nasjonal kompetansetjeneste for inkontinens og bekkenbunnsykdom. St. Marks inkon
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f15f0d3ceee95153e534c83830b9e1ce">
+		["MD5-CAM-1.0.1"] = <"0df57da8153be1da98c7fddb4b8dd3f2">
 		["build_uid"] = <"95248a6a-c3bf-44cf-8665-96522ee30e15">
 		["revision"] = <"1.0.0">
 	>
@@ -339,8 +339,8 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*St. Marks incontinence score(en)">
-					description = <"*En klinisk skår for å vurdere alvorlighetsgrad av anal inkontinens.">
+					text = <"St. Marks inkontinensskår">
+					description = <"En klinisk skår for å vurdere alvorlighetsgrad av anal inkontinens.">
 				>
 				["at0001"] = <
 					text = <"History">
