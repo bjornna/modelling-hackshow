@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e83a4622a9608542b812b7ba7ad89fbf",
+      "MD5-CAM-1.0.1" : "039d35976d456947f4ab6ff0c20ed6c4",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -401,7 +401,8 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "INTERVAL_EVENT",
-              "nodeId" : "at0059",
+              "occurrences" : "0..0",
+              "nodeId" : "at0059.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -424,8 +425,7 @@
                     "rmAttributeName" : "defining_code",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
-                      "occurrences" : "1..1",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
                       "terminologyId" : {
                         "value" : "openehr"
                       },
