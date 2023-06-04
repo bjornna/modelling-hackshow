@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "039d35976d456947f4ab6ff0c20ed6c4",
+      "MD5-CAM-1.0.1" : "e00987b36b877a2eed26bf450df0987b",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -401,7 +401,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "INTERVAL_EVENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0059.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
