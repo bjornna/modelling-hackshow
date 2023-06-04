@@ -54,13 +54,13 @@ Nasjonal kompetansetjeneste for inkontinens og bekkenbunnsykdom. St. Marks inkon
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"459858BDA81291B7796077BCA365225B">
+		["MD5-CAM-1.0.1"] = <"f15f0d3ceee95153e534c83830b9e1ce">
 		["build_uid"] = <"95248a6a-c3bf-44cf-8665-96522ee30e15">
 		["revision"] = <"1.0.0">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- St. Mark's incontinence score
+	OBSERVATION[at0000] matches {    -- St. Marks incontinence score
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -170,7 +170,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"St. Mark's incontinence score">
+					text = <"St. Marks incontinence score">
 					description = <"A tool for assessing the severity of fecal incontinence.">
 				>
 				["at0001"] = <
@@ -339,8 +339,8 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"St. Mark's inkontinensskår">
-					description = <"En klinisk skår for å vurdere alvorlighetsgrad av anal inkontinens.">
+					text = <"*St. Marks incontinence score(en)">
+					description = <"*En klinisk skår for å vurdere alvorlighetsgrad av anal inkontinens.">
 				>
 				["at0001"] = <
 					text = <"History">
