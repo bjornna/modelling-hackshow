@@ -154,7 +154,9 @@
           },
           "codeString" : "nb"
         },
-        "keywords" : [ ],
+        "purpose" : "\t\nFor vurdering av kompleksitet og nivå av tverrfaglig rehabiliteringtiltak etter akutt sykdom og skade i henhold til ABC sjekklisten.",
+        "keywords" : [ "ABC sjekkliste" ],
+        "use" : "\t\nBrukes for å registrere vurdering av kompleksitet for mer riktig henvisning til kommunal eller spesialisthelsetjeneste rehabiliteringstiltak etter behandling i sykehus. Arketypen er basert på revidert versjon fra 15.04.2021.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
