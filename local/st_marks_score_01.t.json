@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e00987b36b877a2eed26bf450df0987b",
+      "MD5-CAM-1.0.1" : "b5ac42c1f7fa2d73c4e9edf89c371879",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -357,9 +357,39 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "459858BDA81291B7796077BCA365225B"
+        "PARENT:MD5-CAM-1.0.1" : "0df57da8153be1da98c7fddb4b8dd3f2"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere resultatene for hvert parameter og deres totalsum for St. Marks inkontinens skår.",
+          "keywords" : [ "anal inkontinens, enkoprese" ],
+          "use" : "Brukes for å registrere resultatene for hvert parameter og deres totalsum for St. Marks inkontinens skår.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the results for each component parameter and their total sum for the St. Mark's Incontinence Score.",
+          "keywords" : [ "fecal incontinence, anal incontinence, bowel incontinence, incontinence, encopresis" ],
+          "use" : "Use to record the results for each component parameter and their total sum for the St. Mark's Incontinence Score.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.st_marks_score.v1",
     "differential" : true,
@@ -425,6 +455,7 @@
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
                       "terminologyId" : {
                         "value" : "openehr"
                       },
