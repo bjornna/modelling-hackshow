@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=cc3a20b3-8928-4c2a-babd-fe9e28987be7)
+archetype (adl_version=1.4; uid=f27a2633-acfa-4843-a416-5b6c937a1a43)
 	openEHR-EHR-EVALUATION.problem_diagnosis.v1
 
 concept
@@ -40,8 +40,9 @@ language
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
-				["name"] = <"Silje Ljosland Bakke, John Tore Valand">
-				["organisation"] = <"Helse Bergen HF">
+				["name"] = <"Silje Ljosland Bakke, John Tore Valand, Liv Laugen">
+				["organisation"] = <"Helse Bergen HF, ​Oslo University Hospital, Norway">
+				["email"] = <"liv.laugen@ous-hf.no">
 			>
 		>
 		["ko"] = <
@@ -511,32 +512,6 @@ Da non utilizzare per registrare dichiarazioni su reazioni avverse, allergie o i
 
 Da non utilizzare per la registrazione esplicita di un'assenza (o presenza negativa) di un problema o di una diagnosi, ad esempio \"Nessun problema o diagnosi nota\" o \"Nessun diabete noto\". Utilizzare l'archetipo EVALUATION.exclusion-problem_diagnosis per esprimere una dichiarazione positiva sull'esclusione di un problema o di una diagnosi.">
 		>
-		["zh"] = <
-			language = <[ISO_639-1::zh]>
-			other_details = <
-				["notes"] = <"Generated automatically by Adl Designer">
-			>
-		>
-		["es"] = <
-			language = <[ISO_639-1::es]>
-			purpose = <"Este arquetipo se utilizará para registrar un único problema de salud o diagnóstico identificado para el paciente.
-
-El alcance del arquetipo se dejó deliberadamente abierto, para poder capturar cualquier inquietud real o percibida que afecte en cualquier grado la salud de un paciente. Independientemente de quién detecte el problema, el diagnóstico debe ser definido basado en criterios clínicos objetivos, determinados por un profesional clínico.">
-			keywords = <"problema","diagnóstico","preocupación","condición","enfermedad">
-			copyright = <"© openEHR Foundation">
-			use = <"Este arquetipo se utilizará para registrar un único problema de salud o diagnóstico identificado para el paciente.">
-			misuse = <"No se debe utilizar para registrar síntomas descritos por el paciente, para eso utilizar el arquetipo CLUSTER.symtom.
-
-No se debe utilizar para registrar hallazgos, para eso utilizar arquetipos relacionados con la examinación, usualmente relacionados con el arquetipo OBSERVATION.exam
-
-No se debe utilizar para registrar diagnósticos realizados sobre resultados de estudios diagnósticos como laboratorio o imagenología.
-
-No se debe utilizar para registrar el motivo de consulta o problema presentado por el paciente, para eso utilizar el arquetipo EVALUATION.reason_for_encounter
-
-No se debe utilizar para registrar riesgos o problemas potenciales, para eso utilizar el arquetipo EVALUATION.health_risk
-
-No se debe utilizar para registrar la ausencia de un problema, para eso utilizar el arquetipo EVALUATION.exclusion-problem_diagnosis">
-		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
 			purpose = <"*For recording details about a single, identified health problem or diagnosis. 
@@ -578,6 +553,32 @@ Not to be used to record statements about adverse reactions, allergies or intole
 
 Not to be used for the explicit recording of an absence (or negative presence) of a problem or diagnosis, for example ‘No known problem or diagnoses’ or ‘No known diabetes’. Use the EVALUATION.exclusion-problem_diagnosis archetype to express a positive statement about exclusion of a problem or diagnosis.(en)">
 		>
+		["zh"] = <
+			language = <[ISO_639-1::zh]>
+			other_details = <
+				["notes"] = <"Generated automatically by Adl Designer">
+			>
+		>
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Este arquetipo se utilizará para registrar un único problema de salud o diagnóstico identificado para el paciente.
+
+El alcance del arquetipo se dejó deliberadamente abierto, para poder capturar cualquier inquietud real o percibida que afecte en cualquier grado la salud de un paciente. Independientemente de quién detecte el problema, el diagnóstico debe ser definido basado en criterios clínicos objetivos, determinados por un profesional clínico.">
+			keywords = <"problema","diagnóstico","preocupación","condición","enfermedad">
+			copyright = <"© openEHR Foundation">
+			use = <"Este arquetipo se utilizará para registrar un único problema de salud o diagnóstico identificado para el paciente.">
+			misuse = <"No se debe utilizar para registrar síntomas descritos por el paciente, para eso utilizar el arquetipo CLUSTER.symtom.
+
+No se debe utilizar para registrar hallazgos, para eso utilizar arquetipos relacionados con la examinación, usualmente relacionados con el arquetipo OBSERVATION.exam
+
+No se debe utilizar para registrar diagnósticos realizados sobre resultados de estudios diagnósticos como laboratorio o imagenología.
+
+No se debe utilizar para registrar el motivo de consulta o problema presentado por el paciente, para eso utilizar el arquetipo EVALUATION.reason_for_encounter
+
+No se debe utilizar para registrar riesgos o problemas potenciales, para eso utilizar el arquetipo EVALUATION.health_risk
+
+No se debe utilizar para registrar la ausencia de un problema, para eso utilizar el arquetipo EVALUATION.exclusion-problem_diagnosis">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -593,9 +594,9 @@ Weed LL. Medical records that guide and teach. N Engl J Med. 1968 Mar 14;278(11)
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"86372236E61A02A1C3905BA9033C255F">
-		["build_uid"] = <"3dad3e6a-4444-4069-b22b-aed20b9c7377">
-		["revision"] = <"1.1.1">
+		["MD5-CAM-1.0.1"] = <"EF178D60EC50DFA0B397073812D70C7C">
+		["build_uid"] = <"9efa4a84-33a2-4959-a9e3-1694d865da27">
+		["revision"] = <"1.2.0">
 	>
 
 definition
@@ -620,7 +621,7 @@ definition
 					}
 					allow_archetype CLUSTER[at0039] occurrences matches {0..*} matches {    -- Structured body site
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_circle\.v1|openEHR-EHR-CLUSTER\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\.v2/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_circle\.v1|openEHR-EHR-CLUSTER\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					ELEMENT[at0078] occurrences matches {0..*} matches {    -- Cause
 						value matches {
@@ -666,7 +667,7 @@ definition
 					}
 					allow_archetype CLUSTER[at0046] occurrences matches {0..*} matches {    -- Status
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.problem_qualifier(-[a-zA-Z0-9_]+)*\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.problem_qualifier(-[a-zA-Z0-9_]+)*\.v2/}
 					}
 					ELEMENT[at0073] occurrences matches {0..1} matches {    -- Diagnostic certainty
 						value matches {
@@ -1527,7 +1528,7 @@ Dersom den anatomiske lokaliseringen inkluderes i feltet \"Problem/diagnosenavn\
 				["at0073"] = <
 					text = <"Diagnostisk sikkerhet">
 					description = <"Grad av sikkerhet i identifikasjonen av diagnosen.">
-					comment = <"*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)">
+					comment = <"Hvis et alternativt verdisett er nødvendig, kan disse verdiene legges til DV_TEXT-datatypen i et templat.">
 				>
 				["at0074"] = <
 					text = <"Mistenkt">
@@ -1547,9 +1548,9 @@ Dersom den anatomiske lokaliseringen inkluderes i feltet \"Problem/diagnosenavn\
 					comment = <"Data registrert eller importert som \"alder ved debut\" bør konverteres til en dato ved hjelp av individets fødselsdato.">
 				>
 				["at0078"] = <
-					text = <"*Cause (en)">
-					description = <"*A cause, set of causes, or manner of causation of the problem or diagnosis.(en)">
-					comment = <"*Also known as 'aetiology' or 'etiology'. Coding with an external terminology is preferred, where possible.(en)">
+					text = <"Årsak">
+					description = <"En årsak, kjede av årsaker til, eller hendelsesforløp forut for problemet eller diagnosen.">
+					comment = <"Også kjent som 'etiologi'. Det anbefales å kode \"Årsak\" med en ekstern terminologi dersom det er mulig.">
 				>
 			>
 		>
