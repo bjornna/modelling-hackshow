@@ -9,7 +9,7 @@
       "organisation" : "DIPS AS",
       "email" : "bna@dips.no"
     },
-    "otherContributors" : [ "Morten Hørthe <mho@dips.no>" ],
+    "otherContributors" : [ ],
     "lifecycleState" : {
       "codeString" : "unmanaged"
     },
@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD",
-      "MD5-CAM-1.0.1" : "5dce8b5f13db3ef95120e426b22d5ece"
+      "MD5-CAM-1.0.1" : "75b0a2e6a7b702cc94b2d712967cada9"
     },
     "details" : {
       "de" : {
@@ -154,7 +154,6 @@
           },
           "codeString" : "nb"
         },
-        "purpose" : "Benyttes for å registrere komplikasjoner og til",
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
@@ -358,7 +357,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "86372236E61A02A1C3905BA9033C255F"
+        "PARENT:MD5-CAM-1.0.1" : "EF178D60EC50DFA0B397073812D70C7C"
       },
       "details" : {
         "de" : {
@@ -717,7 +716,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
+              "occurrences" : "0..0",
               "nodeId" : "at0046.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
