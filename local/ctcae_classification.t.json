@@ -9,7 +9,7 @@
       "organisation" : "DIPS AS",
       "email" : "bna@dips.no"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Morten Hørthe <mho@dips.no>" ],
     "lifecycleState" : {
       "codeString" : "unmanaged"
     },
@@ -154,6 +154,7 @@
           },
           "codeString" : "nb"
         },
+        "purpose" : "Benyttes for å registrere komplikasjoner og til",
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
