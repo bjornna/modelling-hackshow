@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD",
-      "MD5-CAM-1.0.1" : "db7faa99ee3093381cbb568e1c1eb54f"
+      "MD5-CAM-1.0.1" : "266eed606040324c99fb7ffd8356ce77"
     },
     "details" : {
       "de" : {
@@ -708,11 +708,11 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
-              "nodeId" : "at0043.1",
+              "occurrences" : "0..1",
+              "nodeId" : "at0046.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-ctcae-001.v0",
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-ctcae-001.v1",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
@@ -943,7 +943,7 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "eb8a7927-e44f-4f95-b746-80c2c0d5594a",
+    "uid" : "d7de2e64-fc97-4cf5-9c8c-2934e7e6e2c0",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -952,229 +952,21 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9472f8b89726ee20d274ad795bf1e538"
+        "PARENT:MD5-CAM-1.0.1" : "8F96A89D77D4F736B57D36E1D2B697F4"
       },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "*To provide a framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.\r\nTo provide a framework for recording a CTCAE classification. (en)",
-          "keywords" : [ "ctcae", "Symptom", "Krankheit", "unerwünscht", "Ereignis" ],
-          "use" : "*Use to provide a framework for recording a CTCAE classification., using terms from appropriate MedDRA terminology hierarchies.\r\n\r\nThis archetype is intended to be nested in the 'Specific details' SLOT within either the EVALUATION.problem_diagnosis or CLUSTER.symptom_sign archetypes, or other clinically relevant archetypes.\r\n\r\nThe 'Grade' data element provides a choice of data types - allowing the selection of one of DV_TEXT, DV_ORDINAL or DV_SCALE. \r\n- The DV_SCALE option contains the 5 grades associated with generic guidance about each level of severity. This will support recording of the Grade in a consistent manner, but without the associated sign-, symptom- or disease-specific term. \r\n- The DV_ORDINAL option has the same technical representation as DV_SCALE but has been left open so that the Grades and terms can be added within a template during implementation or at run-time from an external knowledge base. \r\n- The DV_TEXT option can be used in a template in a similar way to the DV_ORDINAL but without the Ordinal scoring attributes. (en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "purpose" : "*To provide a framework for recording any unfavourable and unintended sign, symptom or disease temporally using the CTCAE terminology.\r\nTo provide a framework for recording a CTCAE classification. (en)",
-          "keywords" : [ "CTCAE", "biverkan", "biverkningar", "tecken", "symptom", "sjukdom", "cytostatika" ],
-          "use" : "*Use to provide a framework for recording a CTCAE classification., using terms from appropriate MedDRA terminology hierarchies.\r\n\r\nThis archetype is intended to be nested in the 'Specific details' SLOT within either the EVALUATION.problem_diagnosis or CLUSTER.symptom_sign archetypes, or other clinically relevant archetypes.\r\n\r\nThe 'Grade' data element provides a choice of data types - allowing the selection of one of DV_TEXT, DV_ORDINAL or DV_SCALE. \r\n- The DV_SCALE option contains the 5 grades associated with generic guidance about each level of severity. This will support recording of the Grade in a consistent manner, but without the associated sign-, symptom- or disease-specific term. \r\n- The DV_ORDINAL option has the same technical representation as DV_SCALE but has been left open so that the Grades and terms can be added within a template during implementation or at run-time from an external knowledge base. \r\n- The DV_TEXT option can be used in a template in a similar way to the DV_ORDINAL but without the Ordinal scoring attributes. (en)",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "Et rammeverk for å registrere CTCAE-klassifisering.",
-          "keywords" : [ "ctcae", "sykdomstegn", "symptom", "sykdom", "utilsiktet", "ugunstig", "uønsket", "medisinsk", "hendelse", "bivirkning" ],
-          "use" : "Bruk som et rammeverk for å registrere CTCAE-klassifisering, ved å bruke koder fra hierarkiet av termer fra MedDRA-terminologien.\r\n\r\nDenne arketypen er tiltenkt å brukes i CLUSTER.symptom_sign (Symptom/Sykdomstegn) eller EVALUATION.problem_diagnosis (Problem/diagnose) eller en annen klinisk relevant arketype.\r\n\r\nDataelement 'Grad\" tilbyr å velge blant tre forskjellige datatyper: DV_TEXT, DV_ORDINAL eller DV_SCALE.\r\n\r\n- Alternativet DV_SCALE består av 5 grader som er ledsaget med en generisk veiledning om hvert enkelt nivå av alvorlighetsgrad. Dette vil støtte at registrering av grad skjer konsistent, men uten den tilhørende teksten som er knyttet til termene for symptom, sykdomstegn eller sykdom.\r\n\r\n- Alternativet DV_ORDINAL gir de samme mulighetene som DV_SCALE, men er uten ledsagende tekst, slik at grad og term kan bli lagt til i templat eller ved run-time fra en ekstern kunnskapsdatabase. \r\n\r\n- Alternativet DV_TEXT kan brukes i templat på samme måte som DV_ORDINAL, men uten attributtene som hører til ordinal-datatypen.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To provide a framework for recording a CTCAE classification.",
-          "keywords" : [ "ctcae", "sign", "symptom", "disease", "adverse", "event" ],
-          "use" : "Use to provide a framework for recording a CTCAE classification, using terms from appropriate MedDRA terminology hierarchies.\r\n\r\nThis archetype is intended to be nested in the 'Specific details' SLOT within either the EVALUATION.problem_diagnosis or CLUSTER.symptom_sign archetypes, or other clinically relevant archetypes.\r\n\r\nThe 'Grade' data element provides a choice of data types - allowing the selection of one of DV_TEXT, DV_ORDINAL or DV_SCALE. \r\n- The DV_SCALE option contains the 5 grades associated with generic guidance about each level of severity. This will support recording of the Grade in a consistent manner, but without the associated sign-, symptom- or disease-specific term. \r\n- The DV_ORDINAL option has the same technical representation as DV_SCALE but has been left open so that the Grades and terms can be added within a template during implementation or at run-time from an external knowledge base. \r\n- The DV_TEXT option can be used in a template in a similar way to the DV_ORDINAL but without the Ordinal scoring attributes.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
+      "details" : { }
     },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.ctcae.v0",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.ctcae.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-ctcae-001.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-ctcae-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
-                  "terminologyId" : {
-                    "value" : "CTCAE-GROUP"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "CTCAE-GROUP" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1001",
-                    "value" : "Blood and lymphatic system disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1002",
-                    "value" : "Cardiac disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1003",
-                    "value" : "Congenital, familial and genetic disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1004",
-                    "value" : "Ear and labyrinth disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1005",
-                    "value" : "Endocrine disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1006",
-                    "value" : "Eye disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1007",
-                    "value" : "Gastrointestinal disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1008",
-                    "value" : "General disorders and administration site conditions"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1009",
-                    "value" : "Hepatobiliary disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1010",
-                    "value" : "Immune system disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1011",
-                    "value" : "Infections and infestations"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1012",
-                    "value" : "Injury, poisoning and procedural complications"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1013",
-                    "value" : "Investigations"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1014",
-                    "value" : "Metabolism and nutrition disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1015",
-                    "value" : "Musculoskeletal and connective tissue disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1016",
-                    "value" : "Neoplasms benign, malignant and unspecified (incl cysts and polyps)"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1017",
-                    "value" : "Nervous system disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1018",
-                    "value" : "Pregnancy, puerperium and perinatal conditions"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1019",
-                    "value" : "Psychiatric disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1020",
-                    "value" : "Renal and urinary disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1021",
-                    "value" : "Reproductive system and breast disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1022",
-                    "value" : "Respiratory, thoracic and mediastinal disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1023",
-                    "value" : "Skin and subcutaneous tissue disorders"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1024",
-                    "value" : "Social circumstances"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1025",
-                    "value" : "Surgical and medical procedures"
-                  }, {
-                    "terminologyId" : "CTCAE-GROUP",
-                    "code" : "1026",
-                    "value" : "Vascular disorders"
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0003.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0009.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
+      "attributes" : [ ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -1191,7 +983,7 @@
       "valueSets" : { }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "69cde4de-9348-4747-8ac3-c88b3fb58618",
+    "buildUid" : "3136e0c7-5850-4a19-abb7-24742e3f657e",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
@@ -1239,9 +1031,9 @@
         "codeString" : "nb"
       },
       "author" : {
-        "name" : "Vebjørn Arntzen",
-        "organisation" : "Oslo University Hospital",
-        "email" : "varntzen@ous-hf.no"
+        "name" : "Vebjørn Arntzen, John Tore Valand",
+        "organisation" : "Oslo University Hospital, Helse Bergen",
+        "email" : "varntzen@ous-hf.no, john.tore.valand@helse-vest-ikt.no"
       },
       "otherDetails" : { }
     } ]
