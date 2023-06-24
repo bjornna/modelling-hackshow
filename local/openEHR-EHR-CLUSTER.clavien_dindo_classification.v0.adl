@@ -23,6 +23,7 @@ description
 		["email"] = <"tna@dips.no">
 	>
 	lifecycle_state = <"in_development">
+	other_contributors = <"Bjørn Næss <bna@dips.no>", ...>
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -51,7 +52,7 @@ description
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"E2AE8CF7AC476E945864256DCB5A96EC">
+		["MD5-CAM-1.0.1"] = <"29b925656c3696070b554a52b3fdce03">
 		["build_uid"] = <"27221c13-8b05-4b2a-a864-912c0eefcca4">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -64,8 +65,10 @@ definition
 					1|[local::at0002],
 					2|[local::at0003],
 					3|[local::at0004],
-					4|[local::at0005],
-					5|[local::at0006]
+					4|[local::at0007],
+					5|[local::at0005],
+					6|[local::at0008],
+					7|[local::at0006]
 				}
 			}
 		}
@@ -84,24 +87,32 @@ ontology
 					description = <"Clavien-Dindo klassifikasjonen for å gradere alvorligheten av kirurgiske komplikasjoner ">
 				>
 				["at0002"] = <
-					text = <"Grad 1">
-					description = <"Alle avvik fra et normalt postoperativt forløp som ikke krever farmakologisk behandling eller kirurgisk, endoskopisk eller  radiologisk intervensjon. Tillatte terapeutiske regimer er: medikamenter som antiemetika, antipyretika, analgetika, diuretika, elektrolytter, og fysioterapi. Denne graden inkluderer også sårinfeksjoner som åpnes i seng på sengepost. ">
+					text = <"Grad I">
+					description = <"Alle avvik fra et normalt postoperativt forløp som ikke krever farmakologisk behandling eller kirurgisk, endoskopisk eller  radiologisk intervensjon. Tillatte terapeutiske regimer er: medikamenter som antiemetika, antipyretika, analgetika, diuretika, elektrolytter, og fysioterapi. Denne graden inkluderer også sårinfeksjoner som åpnes i seng på sengepost.">
 				>
 				["at0003"] = <
-					text = <"Grad 2">
+					text = <"Grad II">
 					description = <"Krever farmakologisk behandling med andre medikamenter enn de som er skissert under grad 1. Blodtransfusjoner og total parenteral nutrisjon er også inkludert.">
 				>
 				["at0004"] = <
-					text = <"Grad 3">
-					description = <"Krever kirurgisk, endoskopisk eller radiologisk intervensjon">
+					text = <"Grad IIIa">
+					description = <"Krever kirurgisk, endoskopisk eller radiologisk intervensjon - invervensjon ikke under generell anestesi">
 				>
 				["at0005"] = <
-					text = <"Grad 4">
-					description = <"Livstruende komplikasjoner (inkludert CNS komplikasjoner) som krever intensiv behandling i intensivavdeling">
+					text = <"Grad IVa">
+					description = <"Livstruende komplikasjoner (inkludert CNS komplikasjoner) som krever intensiv behandling i intensivavdeling - singel organ dysfunksjon (inkluderer dialyse)">
 				>
 				["at0006"] = <
-					text = <"Grad 5">
+					text = <"Grad V">
 					description = <"Død">
+				>
+				["at0007"] = <
+					text = <"Grad IIIb">
+					description = <"Krever kirurgisk, endoskopisk eller radiologisk intervensjon - invervensjon under generell anestesi">
+				>
+				["at0008"] = <
+					text = <"Grad IVb">
+					description = <"Livstruende komplikasjoner (inkludert CNS komplikasjoner) som krever intensiv behandling i intensivavdeling - multiorgan dysfunksjon">
 				>
 			>
 		>
@@ -137,6 +148,14 @@ Blood transfusions and total parenteral nutrition are also included.">
 				["at0006"] = <
 					text = <"Grade 5">
 					description = <"Death of a patient">
+				>
+				["at0007"] = <
+					text = <"*Grad IIIb (nb)">
+					description = <"*Krever kirurgisk, endoskopisk eller radiologisk intervensjon - invervensjon under generell anestesi (nb)">
+				>
+				["at0008"] = <
+					text = <"*Grad IVb (nb)">
+					description = <"*Livstruende komplikasjoner (inkludert CNS komplikasjoner) som krever intensiv behandling i intensivavdeling - multiorgan dysfunksjon (nb)">
 				>
 			>
 		>
