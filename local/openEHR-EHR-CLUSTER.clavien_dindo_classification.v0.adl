@@ -52,7 +52,7 @@ description
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"29b925656c3696070b554a52b3fdce03">
+		["MD5-CAM-1.0.1"] = <"097c883eb61d83f775ae51720cc2c5fc">
 		["build_uid"] = <"27221c13-8b05-4b2a-a864-912c0eefcca4">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -127,35 +127,35 @@ ontology
 					description = <"*">
 				>
 				["at0002"] = <
-					text = <"Grade 1">
+					text = <"Grade I">
 					description = <"Any deviation from the normal postoperative course without the need for pharmacological treatment or surgical, endoscopic and radiological interventions. Grade  I:
 Same as for Full Scale
 Allowed therapeutic regimens are: drugs as antiemetics, antipyretics, analgetics, diuretics and electrolytes and physiotherapy. This grade also includes wound infections opened at the bedside.">
 				>
 				["at0003"] = <
-					text = <"Grade 2">
+					text = <"Grade II">
 					description = <"Requiring pharmacological treatment with drugs other than such allowed for grade I complications.
 Blood transfusions and total parenteral nutrition are also included.">
 				>
 				["at0004"] = <
-					text = <"Grade 3">
-					description = <"Requiring surgical, endoscopic or radiological intervention">
+					text = <"Grade IIIa">
+					description = <"Requiring surgical, endoscopic or radiological intervention - Intervention not under general anesthesia">
 				>
 				["at0005"] = <
-					text = <"Grade 4">
-					description = <"Life-threatening complication (including CNS complications)‡ requiring IC/ICU-management">
+					text = <"Grade IVa">
+					description = <"Life-threatening complication (including CNS complications)* requiring IC/ICU-management - single organ dysfunction (including dialysis)">
 				>
 				["at0006"] = <
 					text = <"Grade 5">
 					description = <"Death of a patient">
 				>
 				["at0007"] = <
-					text = <"*Grad IIIb (nb)">
-					description = <"*Krever kirurgisk, endoskopisk eller radiologisk intervensjon - invervensjon under generell anestesi (nb)">
+					text = <"Grade IIIb">
+					description = <"Requiring surgical, endoscopic or radiological intervention - Intervention under general anesthesia">
 				>
 				["at0008"] = <
-					text = <"*Grad IVb (nb)">
-					description = <"*Livstruende komplikasjoner (inkludert CNS komplikasjoner) som krever intensiv behandling i intensivavdeling - multiorgan dysfunksjon (nb)">
+					text = <"Grade IVb">
+					description = <"Life-threatening complication (including CNS complications)* requiring IC/ICU-management - 	multiorgandysfunction">
 				>
 			>
 		>
