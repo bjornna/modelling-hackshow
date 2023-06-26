@@ -25,6 +25,10 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			purpose = <"The Comprehensive Complication Index (CCI®) calculator is a tool to support the assessment of patients’ overall morbidity after an intervention. The CCI® is based on the complication grading by the Clavien-Dindo Classification and captures every complication that occurred after an intervention. The overall morbidity is reflected on a scale from 0 (no complication) to 100 (death) and reflects the gravity of this overall complication burden on the patient. The CCI® was developed together with patients to ensure the patients’ perspective is represented in the scale. The CCI® formula adjusts for the number and severity of the complications and is not a simple summation of all complication grades. This index allows the observation of morbidity over the course of time as it can be recalculated every time the patient is followed-up or at predefined time points (e.g., at discharge, 30 days postoperatively etc.).
+
+The CCI® has been validated in several independent patient cohorts, underlining its reproducibility, and the CCI® is a sensitive endpoint when assessing outcome. The CCI® is especially useful for randomized trials, as smaller sample sizes suffice to detect significant difference in outcome (as every patient has a CCI®, even if it is zero) compared to using binary outcomes (e.g., yes/no complication or complication ≤3a vs. >3a). It was shown that overall morbidity measured by CCI® correlates strongly with treatment cost, and more strongly that using only the highest complication according to the Clavien-Dindo classification.">
+			keywords = <"komplikasjoner", ...>
 			copyright = <"© openEHR Foundation">
 		>
 		["en"] = <
@@ -38,12 +42,12 @@ The CCI® has been validated in several independent patient cohorts, underlining
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://www.cci-calculator.com/
+https://www.researchgate.net/publication/360921888_The_comprehensive_complication_index_as_a_tool_for_reporting_the_burden_of_complications_after_mini-percutaneous_nephrolithotomy_is_it_time_to_leave_the_Clavien-Dindo_classification_behind">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["references"] = <"https://www.cci-calculator.com/
-https://www.researchgate.net/publication/360921888_The_comprehensive_complication_index_as_a_tool_for_reporting_the_burden_of_complications_after_mini-percutaneous_nephrolithotomy_is_it_time_to_leave_the_Clavien-Dindo_classification_behind">
-		["MD5-CAM-1.0.1"] = <"f64bb851b7dcc44562e1903d953709cb">
+		["MD5-CAM-1.0.1"] = <"9c3ef0d5241fbbfb2418011cf1b88cc5">
 		["build_uid"] = <"66df58ed-01b1-3c01-8e7d-602ea66b56ba">
 	>
 
@@ -147,39 +151,39 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Comprehensive  Complication Index (en)">
+					text = <"Comprehensive  Complication Index">
 					description = <"*comprehensive_complication_index (en)">
 				>
 				["at0001"] = <
-					text = <"*Grade I (en)">
+					text = <"Grad I">
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"*Grade II (en)">
+					text = <"Grad II">
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"*Grade IIIa (en)">
+					text = <"Grad IIIa">
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"*Grade IIIb (en)">
+					text = <"Grad IIIb">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*Grade IVa (en)">
+					text = <"Grad Iva">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*Grade IVb (en)">
+					text = <"Grad Ivb">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*Grade V (en)">
+					text = <"Grad V">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*CCI (en)">
+					text = <"CCI">
 					description = <"">
 				>
 			>
