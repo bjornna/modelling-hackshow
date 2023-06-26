@@ -47,7 +47,7 @@ https://www.researchgate.net/publication/360921888_The_comprehensive_complicatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9c3ef0d5241fbbfb2418011cf1b88cc5">
+		["MD5-CAM-1.0.1"] = <"e6e87390bf76a4c498145631b5ac0693">
 		["build_uid"] = <"66df58ed-01b1-3c01-8e7d-602ea66b56ba">
 	>
 
@@ -152,7 +152,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Comprehensive  Complication Index">
-					description = <"*comprehensive_complication_index (en)">
+					description = <"Comprehensive  Complication Index">
 				>
 				["at0001"] = <
 					text = <"Grad I">
@@ -171,11 +171,11 @@ ontology
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"Grad Iva">
+					text = <"Grad IVa">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"Grad Ivb">
+					text = <"Grad IVb">
 					description = <"">
 				>
 				["at0007"] = <
