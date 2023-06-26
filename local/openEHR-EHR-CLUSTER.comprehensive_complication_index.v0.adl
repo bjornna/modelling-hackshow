@@ -1,0 +1,136 @@
+archetype (adl_version=1.4; uid=7f634611-c46a-449a-a964-6172da84c766)
+	openEHR-EHR-CLUSTER.comprehensive_complication_index.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-06-26">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"The Comprehensive Complication Index (CCI®) calculator is a tool to support the assessment of patients’ overall morbidity after an intervention. The CCI® is based on the complication grading by the Clavien-Dindo Classification and captures every complication that occurred after an intervention. The overall morbidity is reflected on a scale from 0 (no complication) to 100 (death) and reflects the gravity of this overall complication burden on the patient. The CCI® was developed together with patients to ensure the patients’ perspective is represented in the scale. The CCI® formula adjusts for the number and severity of the complications and is not a simple summation of all complication grades. This index allows the observation of morbidity over the course of time as it can be recalculated every time the patient is followed-up or at predefined time points (e.g., at discharge, 30 days postoperatively etc.).
+
+The CCI® has been validated in several independent patient cohorts, underlining its reproducibility, and the CCI® is a sensitive endpoint when assessing outcome. The CCI® is especially useful for randomized trials, as smaller sample sizes suffice to detect significant difference in outcome (as every patient has a CCI®, even if it is zero) compared to using binary outcomes (e.g., yes/no complication or complication ≤3a vs. >3a). It was shown that overall morbidity measured by CCI® correlates strongly with treatment cost, and more strongly that using only the highest complication according to the Clavien-Dindo classification.">
+			keywords = <"morbidity", ...>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["references"] = <"https://www.cci-calculator.com/
+https://www.researchgate.net/publication/360921888_The_comprehensive_complication_index_as_a_tool_for_reporting_the_burden_of_complications_after_mini-percutaneous_nephrolithotomy_is_it_time_to_leave_the_Clavien-Dindo_classification_behind">
+		["MD5-CAM-1.0.1"] = <"bd62993eb15806a1e02245b143d00cf6">
+		["build_uid"] = <"66df58ed-01b1-3c01-8e7d-602ea66b56ba">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Comprehensive  Complication Index
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Grade I
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Grade II
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Grade IIIa
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Grade IIIb
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Grade IVa
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Grade IVb
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Grade V
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- CCI
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::380]>
+						list = <
+							["1"] = <
+								units = <"1">
+								magnitude = <|0.0..100.0|>
+								precision = <|1|>
+							>
+						>
+					>
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Comprehensive  Complication Index">
+					description = <"comprehensive_complication_index">
+				>
+				["at0001"] = <
+					text = <"Grade I">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Grade II">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Grade IIIa">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Grade IIIb">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Grade IVa">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Grade IVb">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Grade V">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"CCI">
+					description = <"">
+				>
+			>
+		>
+	>
