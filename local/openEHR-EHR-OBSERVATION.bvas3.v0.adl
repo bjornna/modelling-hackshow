@@ -1,0 +1,1896 @@
+archetype (adl_version=1.4; uid=70f999b6-0d3f-4dcc-b2bb-82250076563f)
+	openEHR-EHR-OBSERVATION.bvas3.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2023-06-29">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"The BVAS v3 assesses symptoms and signs of systemic vasculitis, both persistent and new or worsening ones. It consists of 9 sections, each with several items that need to be rated, if present.">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"8a8ffec2ce55fbada0799895eff735d9">
+		["build_uid"] = <"46bed89c-e619-3cc9-86c6-39c68b64058f">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Birmingham Vasculitis Activity Score (BVAS) v3
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0004] occurrences matches {0..1} matches {    -- General
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0013] occurrences matches {0..1} matches {    -- Myalgia
+												value matches {
+													1|[local::at0069],
+													1|[local::at0070]
+												}
+											}
+											ELEMENT[at0014] occurrences matches {0..1} matches {    -- Arthralgia or arthritis
+												value matches {
+													1|[local::at0071],
+													1|[local::at0072]
+												}
+											}
+											ELEMENT[at0015] occurrences matches {0..1} matches {    -- Fever ≥38 °C
+												value matches {
+													2|[local::at0073],
+													2|[local::at0074]
+												}
+											}
+											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Weight Loss ≥2 kg
+												value matches {
+													2|[local::at0075],
+													2|[local::at0076]
+												}
+											}
+										}
+									}
+									CLUSTER[at0005] occurrences matches {0..1} matches {    -- Cutaneous
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0017] occurrences matches {0..1} matches {    -- Infarct
+												value matches {
+													1|[local::at0077],
+													2|[local::at0078]
+												}
+											}
+											ELEMENT[at0018] occurrences matches {0..1} matches {    -- Purpura
+												value matches {
+													1|[local::at0079],
+													2|[local::at0080]
+												}
+											}
+											ELEMENT[at0019] occurrences matches {0..1} matches {    -- Ulcer
+												value matches {
+													1|[local::at0081],
+													4|[local::at0082]
+												}
+											}
+											ELEMENT[at0020] occurrences matches {0..1} matches {    -- Gangrene
+												value matches {
+													2|[local::at0083],
+													6|[local::at0084]
+												}
+											}
+											ELEMENT[at0021] occurrences matches {0..1} matches {    -- Other skin vasculitis
+												value matches {
+													1|[local::at0085],
+													2|[local::at0086]
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] occurrences matches {0..1} matches {    -- Mucous Membranes / eyes
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0022] occurrences matches {0..1} matches {    -- Mouth ulcers / granulomata
+												value matches {
+													1|[local::at0087],
+													2|[local::at0088]
+												}
+											}
+											ELEMENT[at0023] occurrences matches {0..1} matches {    -- Genital ulcers
+												value matches {
+													1|[local::at0089],
+													1|[local::at0090]
+												}
+											}
+											ELEMENT[at0024] occurrences matches {0..1} matches {    -- Adnexal inflammation
+												value matches {
+													2|[local::at0091],
+													4|[local::at0092]
+												}
+											}
+											ELEMENT[at0025] occurrences matches {0..1} matches {    -- Significant proptosis
+												value matches {
+													2|[local::at0093],
+													4|[local::at0094]
+												}
+											}
+											ELEMENT[at0026] occurrences matches {0..1} matches {    -- Scleritis / Episcleritis
+												value matches {
+													1|[local::at0095],
+													2|[local::at0096]
+												}
+											}
+											ELEMENT[at0027] occurrences matches {0..1} matches {    -- Conjunctivitis / Blepharitis / Keratitis
+												value matches {
+													1|[local::at0097],
+													1|[local::at0098]
+												}
+											}
+											ELEMENT[at0028] occurrences matches {0..1} matches {    -- Blurred vision
+												value matches {
+													2|[local::at0099],
+													3|[local::at0100]
+												}
+											}
+											ELEMENT[at0029] occurrences matches {0..1} matches {    -- Sudden visual loss
+												value matches {
+													6|[local::at0101]
+												}
+											}
+											ELEMENT[at0030] occurrences matches {0..1} matches {    -- Uveitis
+												value matches {
+													2|[local::at0102],
+													6|[local::at0103]
+												}
+											}
+											ELEMENT[at0031] occurrences matches {0..1} matches {    -- Retinal changes (vasculitis, thrombosis / exudate / haemorrhage)
+												value matches {
+													2|[local::at0104],
+													6|[local::at0105]
+												}
+											}
+										}
+									}
+									CLUSTER[at0007] occurrences matches {0..1} matches {    -- ENT
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0032] occurrences matches {0..1} matches {    -- Bloody nasal discharge / crusts / ulcers / granulomata
+												value matches {
+													2|[local::at0106],
+													4|[local::at0107]
+												}
+											}
+											ELEMENT[at0033] occurrences matches {0..1} matches {    -- Paranasal sinus involvement
+												value matches {
+													1|[local::at0108],
+													2|[local::at0109]
+												}
+											}
+											ELEMENT[at0034] occurrences matches {0..1} matches {    -- Subglottic stenosis
+												value matches {
+													3|[local::at0110],
+													6|[local::at0111]
+												}
+											}
+											ELEMENT[at0035] occurrences matches {0..1} matches {    -- Conductive hearing loss
+												value matches {
+													1|[local::at0112],
+													3|[local::at0113]
+												}
+											}
+											ELEMENT[at0036] occurrences matches {0..1} matches {    -- Sensorineural hearing loss
+												value matches {
+													2|[local::at0114],
+													6|[local::at0115]
+												}
+											}
+										}
+									}
+									CLUSTER[at0008] occurrences matches {0..1} matches {    -- Chest
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0037] occurrences matches {0..1} matches {    -- Wheeze
+												value matches {
+													1|[local::at0116],
+													2|[local::at0117]
+												}
+											}
+											ELEMENT[at0038] occurrences matches {0..1} matches {    -- Nodules or cavities
+												value matches {
+													3|[local::at0118]
+												}
+											}
+											ELEMENT[at0039] occurrences matches {0..1} matches {    -- Pleural effusion / pleurisy
+												value matches {
+													2|[local::at0119],
+													4|[local::at0120]
+												}
+											}
+											ELEMENT[at0040] occurrences matches {0..1} matches {    -- Infiltrate
+												value matches {
+													2|[local::at0121],
+													4|[local::at0122]
+												}
+											}
+											ELEMENT[at0041] occurrences matches {0..1} matches {    -- Endobronchial involvement
+												value matches {
+													2|[local::at0123],
+													4|[local::at0124]
+												}
+											}
+											ELEMENT[at0042] occurrences matches {0..1} matches {    -- Massive haemoptysis / alveolar haemorrhage
+												value matches {
+													4|[local::at0125],
+													6|[local::at0126]
+												}
+											}
+											ELEMENT[at0043] occurrences matches {0..1} matches {    -- Respiratory failure
+												value matches {
+													4|[local::at0127],
+													6|[local::at0128]
+												}
+											}
+										}
+									}
+									CLUSTER[at0009] occurrences matches {0..1} matches {    -- Cardiovascular
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0044] occurrences matches {0..1} matches {    -- Loss of pulses
+												value matches {
+													1|[local::at0129],
+													4|[local::at0130]
+												}
+											}
+											ELEMENT[at0045] occurrences matches {0..1} matches {    -- Valvular heart disease
+												value matches {
+													2|[local::at0131],
+													4|[local::at0132]
+												}
+											}
+											ELEMENT[at0046] occurrences matches {0..1} matches {    -- Pericarditis
+												value matches {
+													1|[local::at0133],
+													3|[local::at0134]
+												}
+											}
+											ELEMENT[at0047] occurrences matches {0..1} matches {    -- Ischaemic cardiac pain
+												value matches {
+													2|[local::at0135],
+													4|[local::at0136]
+												}
+											}
+											ELEMENT[at0048] occurrences matches {0..1} matches {    -- Cardiomyopathy
+												value matches {
+													3|[local::at0137],
+													6|[local::at0138]
+												}
+											}
+											ELEMENT[at0049] occurrences matches {0..1} matches {    -- Congestive cardiac failure
+												value matches {
+													3|[local::at0139],
+													6|[local::at0140]
+												}
+											}
+										}
+									}
+									CLUSTER[at0010] occurrences matches {0..1} matches {    -- Abdominal
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0050] occurrences matches {0..1} matches {    -- Peritonitis
+												value matches {
+													3|[local::at0141],
+													9|[local::at0142]
+												}
+											}
+											ELEMENT[at0051] occurrences matches {0..1} matches {    -- Bloody diarrhoea
+												value matches {
+													3|[local::at0143],
+													9|[local::at0144]
+												}
+											}
+											ELEMENT[at0052] occurrences matches {0..1} matches {    -- Ischaemic abdominal pain
+												value matches {
+													2|[local::at0145],
+													6|[local::at0146]
+												}
+											}
+										}
+									}
+									CLUSTER[at0011] occurrences matches {0..1} matches {    -- Renal
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0053] occurrences matches {0..1} matches {    -- Hypertension
+												value matches {
+													1|[local::at0147],
+													4|[local::at0148]
+												}
+											}
+											ELEMENT[at0054] occurrences matches {0..1} matches {    -- Proteinuria
+												value matches {
+													2|[local::at0149],
+													4|[local::at0150]
+												}
+											}
+											ELEMENT[at0055] occurrences matches {0..1} matches {    -- Haematuria
+												value matches {
+													3|[local::at0151],
+													6|[local::at0152]
+												}
+											}
+											ELEMENT[at0056] occurrences matches {0..1} matches {    -- Serum creatinine 125-249 μmol/L
+												value matches {
+													2|[local::at0153],
+													4|[local::at0154]
+												}
+											}
+											ELEMENT[at0057] occurrences matches {0..1} matches {    -- Serum creatinine 250-499 μmol/L
+												value matches {
+													3|[local::at0155],
+													6|[local::at0156]
+												}
+											}
+											ELEMENT[at0058] occurrences matches {0..1} matches {    -- Serum creatinine ≥500 μmol/L
+												value matches {
+													4|[local::at0157],
+													8|[local::at0158]
+												}
+											}
+											ELEMENT[at0059] occurrences matches {0..1} matches {    -- >30% rise in creatinine or >25% fall in creatinine clearance
+												value matches {
+													6|[local::at0159]
+												}
+											}
+										}
+									}
+									CLUSTER[at0012] occurrences matches {0..1} matches {    -- Nervous system
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0060] occurrences matches {0..1} matches {    -- Headache
+												value matches {
+													1|[local::at0160],
+													1|[local::at0161]
+												}
+											}
+											ELEMENT[at0061] occurrences matches {0..1} matches {    -- Meningitis
+												value matches {
+													1|[local::at0162],
+													3|[local::at0163]
+												}
+											}
+											ELEMENT[at0062] occurrences matches {0..1} matches {    -- Organic confusion
+												value matches {
+													1|[local::at0164],
+													3|[local::at0165]
+												}
+											}
+											ELEMENT[at0063] occurrences matches {0..1} matches {    -- Seizures (not hypertensive)
+												value matches {
+													3|[local::at0166],
+													9|[local::at0167]
+												}
+											}
+											ELEMENT[at0064] occurrences matches {0..1} matches {    -- Stroke
+												value matches {
+													3|[local::at0168],
+													9|[local::at0169]
+												}
+											}
+											ELEMENT[at0065] occurrences matches {0..1} matches {    -- Spinal cord lesion
+												value matches {
+													3|[local::at0170],
+													9|[local::at0171]
+												}
+											}
+											ELEMENT[at0066] occurrences matches {0..1} matches {    -- Cranial nerve palsy
+												value matches {
+													3|[local::at0172],
+													6|[local::at0173]
+												}
+											}
+											ELEMENT[at0067] occurrences matches {0..1} matches {    -- Sensory peripheral neuropathy
+												value matches {
+													3|[local::at0174],
+													6|[local::at0175]
+												}
+											}
+											ELEMENT[at0068] occurrences matches {0..1} matches {    -- Mononeuritis multiplex
+												value matches {
+													3|[local::at0176],
+													9|[local::at0177]
+												}
+											}
+										}
+									}
+									ELEMENT[at0178] occurrences matches {0..1} matches {    -- Persistent score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..33|}
+											}
+										}
+									}
+									ELEMENT[at0179] occurrences matches {0..1} matches {    -- New/Worse score
+										value matches {
+											DV_COUNT matches {
+												magnitude matches {|0..63|}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Birmingham Vasculitis Activity Score (BVAS) v3">
+					description = <"Birmingham Vasculitis Activity Score (BVAS) v3">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"General">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Cutaneous">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Mucous Membranes / eyes">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"ENT">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Chest">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Cardiovascular">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Abdominal">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Renal">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Nervous system">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Myalgia">
+					description = <"Pain in the muscles">
+				>
+				["at0014"] = <
+					text = <"Arthralgia or arthritis">
+					description = <"Pain in the joints or joint inflammation">
+				>
+				["at0015"] = <
+					text = <"Fever ≥38 °C">
+					description = <"Documented oral / axillary temperature. If rectal temperature is measured, raise threshold to 38.5° C">
+				>
+				["at0016"] = <
+					text = <"Weight Loss ≥2 kg">
+					description = <"Loss of dry body weight without dieting">
+				>
+				["at0017"] = <
+					text = <"Infarct">
+					description = <"Area of tissue necrosis or splinter haemorrhages">
+				>
+				["at0018"] = <
+					text = <"Purpura">
+					description = <"Subcutaneous or submucosal haemorrhage in the absence of trauma">
+				>
+				["at0019"] = <
+					text = <"Ulcer">
+					description = <"A disruption in the continuity of the skin">
+				>
+				["at0020"] = <
+					text = <"Gangrene">
+					description = <"Extensive tissue necrosis">
+				>
+				["at0021"] = <
+					text = <"Other skin vasculitis">
+					description = <"Livedo reticularis, subcutaneous nodules, erythema nodosum, etc">
+				>
+				["at0022"] = <
+					text = <"Mouth ulcers / granulomata">
+					description = <"Aphthous stomatitis, deep ulcers, strawberry gingival hyperplasia">
+				>
+				["at0023"] = <
+					text = <"Genital ulcers">
+					description = <"Ulcers on the genitalia or perineum">
+				>
+				["at0024"] = <
+					text = <"Adnexal inflammation">
+					description = <"Salivary or lacrimal gland inflammation.">
+				>
+				["at0025"] = <
+					text = <"Significant proptosis">
+					description = <">2 mm protrusion of the eyeball">
+				>
+				["at0026"] = <
+					text = <"Scleritis / Episcleritis">
+					description = <"Episcleritis Inflammation of the sclera">
+				>
+				["at0027"] = <
+					text = <"Conjunctivitis / Blepharitis / Keratitis">
+					description = <"Inflammation of the conjunctiva, eyelids or cornea - but not due to sicca syndrome">
+				>
+				["at0028"] = <
+					text = <"Blurred vision">
+					description = <"Deterioration of visual acuity from previous or baseline">
+				>
+				["at0029"] = <
+					text = <"Sudden visual loss">
+					description = <"Acute loss of vision">
+				>
+				["at0030"] = <
+					text = <"Uveitis">
+					description = <"Inflammation of the uvea (iris, ciliary body, choroid)">
+				>
+				["at0031"] = <
+					text = <"Retinal changes (vasculitis, thrombosis / exudate / haemorrhage)">
+					description = <"Sheathing of retinal vessels or evidence of retinal vasculitis on fluorescein angiography; thrombotic retinal arterial or venous occlusion; soft retinal exudate (exclude hard exudates) / retinal haemorrhage">
+				>
+				["at0032"] = <
+					text = <"Bloody nasal discharge / crusts / ulcers / granulomata">
+					description = <"Bloody, mucopurulent, nasal secretion, light or dark brown crusts frequently obstructing the nose, nasal ulcers or granulomatous lesions observed on rhinoscopy">
+				>
+				["at0033"] = <
+					text = <"Paranasal sinus involvement">
+					description = <"Tenderness or pain over paranasal sinuses (usually confirmed by imaging)">
+				>
+				["at0034"] = <
+					text = <"Subglottic stenosis">
+					description = <"Stridor or hoarseness due to inflammation and narrowing of the subglottic area observed by laryngoscopy">
+				>
+				["at0035"] = <
+					text = <"Conductive hearing loss">
+					description = <"Hearing loss due to middle ear involvement (usually confirmed by audiometry)">
+				>
+				["at0036"] = <
+					text = <"Sensorineural hearing loss">
+					description = <"Hearing loss due to auditory nerve or cochlear damage (usually confirmed by audiometry)">
+				>
+				["at0037"] = <
+					text = <"Wheeze">
+					description = <"Wheeze on clinical examination">
+				>
+				["at0038"] = <
+					text = <"Nodules or cavities">
+					description = <"New lesions detected on imaging">
+				>
+				["at0039"] = <
+					text = <"Pleural effusion / pleurisy">
+					description = <"Pleural pain and/or friction rub on clinical assessment; radiologically confirmed pleural effusion.">
+				>
+				["at0040"] = <
+					text = <"Infiltrate">
+					description = <"Detected on chest X-ray or CT scan">
+				>
+				["at0041"] = <
+					text = <"Endobronchial involvement">
+					description = <"Endobronchial pseudotumor or ulcerative lesions. NB: smooth stenotic lesions to be included in VDI; subglottic lesions to be recorded in the ENT section.">
+				>
+				["at0042"] = <
+					text = <"Massive haemoptysis / alveolar haemorrhage">
+					description = <"Major pulmonary bleeding, with shifting pulmonary infiltrates">
+				>
+				["at0043"] = <
+					text = <"Respiratory failure">
+					description = <"The need for artificial ventilation">
+				>
+				["at0044"] = <
+					text = <"Loss of pulses">
+					description = <"Clinical absence of peripheral arterial pulsation in any limb">
+				>
+				["at0045"] = <
+					text = <"Valvular heart disease">
+					description = <"Clinical or echo detection of aortic / mitral / pulmonary valve involvement">
+				>
+				["at0046"] = <
+					text = <"Pericarditis">
+					description = <"Pericardial pain / friction rub on clinical assessment">
+				>
+				["at0047"] = <
+					text = <"Ischaemic cardiac pain">
+					description = <"Typical clinical history of cardiac pain leading to myocardial infarction or angina">
+				>
+				["at0048"] = <
+					text = <"Cardiomyopathy">
+					description = <"Significant impairment of cardiac function due to poor ventricular wall motion confirmed on echocardiography">
+				>
+				["at0049"] = <
+					text = <"Congestive cardiac failure">
+					description = <"Heart failure by history or clinical examination">
+				>
+				["at0050"] = <
+					text = <"Peritonitis">
+					description = <"Typical abdominal pain suggestive of peritoneal involvement">
+				>
+				["at0051"] = <
+					text = <"Bloody diarrhoea">
+					description = <"Of recent onset">
+				>
+				["at0052"] = <
+					text = <"Ischaemic abdominal pain">
+					description = <"Typical abdominal pain suggestive of bowel ischaemia, confirmed by imaging or surgery">
+				>
+				["at0053"] = <
+					text = <"Hypertension">
+					description = <"Diastolic >95 mm Hg">
+				>
+				["at0054"] = <
+					text = <"Proteinuria">
+					description = <">1+ on urinalysis or >0.2g/24 hours">
+				>
+				["at0055"] = <
+					text = <"Haematuria">
+					description = <"‘Moderate’ on urinalysis or ≥10 RBC per high power field, usually accompanied by red cell casts">
+				>
+				["at0056"] = <
+					text = <"Serum creatinine 125-249 μmol/L">
+					description = <"At first assessment only">
+				>
+				["at0057"] = <
+					text = <"Serum creatinine 250-499 μmol/L">
+					description = <"At first assessment only">
+				>
+				["at0058"] = <
+					text = <"Serum creatinine ≥500 μmol/L">
+					description = <"At first assessment only">
+				>
+				["at0059"] = <
+					text = <">30% rise in creatinine or >25% fall in creatinine clearance">
+					description = <"Progressive worsening of renal function. Can be used at each assessment if the renal function has deteriorated from prior value">
+				>
+				["at0060"] = <
+					text = <"Headache">
+					description = <"Unaccustomed & persistent headache">
+				>
+				["at0061"] = <
+					text = <"Meningitis">
+					description = <"Clinical evidence of meningism">
+				>
+				["at0062"] = <
+					text = <"Organic confusion">
+					description = <"Impaired orientation, memory or other intellectual function in the absence of metabolic, psychiatric, pharmacological or toxic causes.">
+				>
+				["at0063"] = <
+					text = <"Seizures (not hypertensive)">
+					description = <"Clinical or EEG evidence of aberrant electrical activity in the brain">
+				>
+				["at0064"] = <
+					text = <"Stroke">
+					description = <"Focal neurological signs lasting >24 hours due to a CNS vascular event">
+				>
+				["at0065"] = <
+					text = <"Spinal cord lesion">
+					description = <"Clinical or imaging evidence of spinal cord involvement">
+				>
+				["at0066"] = <
+					text = <"Cranial nerve palsy">
+					description = <"Clinical evidence of cranial nerve palsy – score VIII nerve palsy as sensorineural hearing loss, do not score ocular palsies if they secondary to pressure effects">
+				>
+				["at0067"] = <
+					text = <"Sensory peripheral neuropathy">
+					description = <"Objective sensory deficit in a non-dermatomal distribution">
+				>
+				["at0068"] = <
+					text = <"Mononeuritis multiplex">
+					description = <"Single or multiple specific motor nerve palsies">
+				>
+				["at0069"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"New/Worse">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"New/Worse">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"New/Worse">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0101"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0102"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0103"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0105"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0109"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0110"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0112"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0113"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0114"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0115"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0116"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0117"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0118"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0120"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0124"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0125"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0126"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0127"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0128"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0129"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0130"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0131"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0132"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0133"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0134"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0135"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0136"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0137"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0138"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0139"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0140"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0141"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0142"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0143"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0144"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0145"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0146"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0147"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0148"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0149"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0150"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0151"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0152"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0153"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0154"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0156"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0157"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0168"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0169"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0170"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0171"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0172"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0173"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0174"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0175"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0176"] = <
+					text = <"Persistent">
+					description = <"">
+				>
+				["at0177"] = <
+					text = <"New/worse">
+					description = <"">
+				>
+				["at0178"] = <
+					text = <"Persistent score">
+					description = <"">
+				>
+				["at0179"] = <
+					text = <"New/Worse score">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Birmingham Vasculitis Activity Score (BVAS) v3 (en)">
+					description = <"*Birmingham Vasculitis Activity Score (BVAS) v3 (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Any event (en)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*General (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Cutaneous (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Mucous Membranes / eyes (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*ENT (en)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"*Chest (en)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*Cardiovascular (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*Abdominal (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Renal (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Nervous system (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Myalgia (en)">
+					description = <"*Pain in the muscles (en)">
+				>
+				["at0014"] = <
+					text = <"*Arthralgia or arthritis (en)">
+					description = <"*Pain in the joints or joint inflammation (en)">
+				>
+				["at0015"] = <
+					text = <"*Fever ≥38 °C (en)">
+					description = <"*Documented oral / axillary temperature. If rectal temperature is measured, raise threshold to 38.5° C (en)">
+				>
+				["at0016"] = <
+					text = <"*Weight Loss ≥2 kg (en)">
+					description = <"*Loss of dry body weight without dieting (en)">
+				>
+				["at0017"] = <
+					text = <"*Infarct (en)">
+					description = <"*Area of tissue necrosis or splinter haemorrhages (en)">
+				>
+				["at0018"] = <
+					text = <"*Purpura (en)">
+					description = <"*Subcutaneous or submucosal haemorrhage in the absence of trauma (en)">
+				>
+				["at0019"] = <
+					text = <"*Ulcer (en)">
+					description = <"*A disruption in the continuity of the skin (en)">
+				>
+				["at0020"] = <
+					text = <"*Gangrene (en)">
+					description = <"*Extensive tissue necrosis (en)">
+				>
+				["at0021"] = <
+					text = <"*Other skin vasculitis (en)">
+					description = <"*Livedo reticularis, subcutaneous nodules, erythema nodosum, etc (en)">
+				>
+				["at0022"] = <
+					text = <"*Mouth ulcers / granulomata (en)">
+					description = <"*Aphthous stomatitis, deep ulcers, strawberry gingival hyperplasia (en)">
+				>
+				["at0023"] = <
+					text = <"*Genital ulcers (en)">
+					description = <"*Ulcers on the genitalia or perineum (en)">
+				>
+				["at0024"] = <
+					text = <"*Adnexal inflammation (en)">
+					description = <"*Salivary or lacrimal gland inflammation. (en)">
+				>
+				["at0025"] = <
+					text = <"*Significant proptosis (en)">
+					description = <"*>2 mm protrusion of the eyeball (en)">
+				>
+				["at0026"] = <
+					text = <"*Scleritis / Episcleritis (en)">
+					description = <"*Episcleritis Inflammation of the sclera (en)">
+				>
+				["at0027"] = <
+					text = <"*Conjunctivitis / Blepharitis / Keratitis (en)">
+					description = <"*Inflammation of the conjunctiva, eyelids or cornea - but not due to sicca syndrome (en)">
+				>
+				["at0028"] = <
+					text = <"*Blurred vision (en)">
+					description = <"*Deterioration of visual acuity from previous or baseline (en)">
+				>
+				["at0029"] = <
+					text = <"*Sudden visual loss (en)">
+					description = <"*Acute loss of vision (en)">
+				>
+				["at0030"] = <
+					text = <"*Uveitis (en)">
+					description = <"*Inflammation of the uvea (iris, ciliary body, choroid) (en)">
+				>
+				["at0031"] = <
+					text = <"*Retinal changes (vasculitis, thrombosis / exudate / haemorrhage) (en)">
+					description = <"*Sheathing of retinal vessels or evidence of retinal vasculitis on fluorescein angiography; thrombotic retinal arterial or venous occlusion; soft retinal exudate (exclude hard exudates) / retinal haemorrhage (en)">
+				>
+				["at0032"] = <
+					text = <"*Bloody nasal discharge / crusts / ulcers / granulomata (en)">
+					description = <"*Bloody, mucopurulent, nasal secretion, light or dark brown crusts frequently obstructing the nose, nasal ulcers or granulomatous lesions observed on rhinoscopy (en)">
+				>
+				["at0033"] = <
+					text = <"*Paranasal sinus involvement (en)">
+					description = <"*Tenderness or pain over paranasal sinuses (usually confirmed by imaging) (en)">
+				>
+				["at0034"] = <
+					text = <"*Subglottic stenosis (en)">
+					description = <"*Stridor or hoarseness due to inflammation and narrowing of the subglottic area observed by laryngoscopy (en)">
+				>
+				["at0035"] = <
+					text = <"*Conductive hearing loss (en)">
+					description = <"*Hearing loss due to middle ear involvement (usually confirmed by audiometry) (en)">
+				>
+				["at0036"] = <
+					text = <"*Sensorineural hearing loss (en)">
+					description = <"*Hearing loss due to auditory nerve or cochlear damage (usually confirmed by audiometry) (en)">
+				>
+				["at0037"] = <
+					text = <"*Wheeze (en)">
+					description = <"*Wheeze on clinical examination (en)">
+				>
+				["at0038"] = <
+					text = <"*Nodules or cavities (en)">
+					description = <"*New lesions detected on imaging (en)">
+				>
+				["at0039"] = <
+					text = <"*Pleural effusion / pleurisy (en)">
+					description = <"*Pleural pain and/or friction rub on clinical assessment; radiologically confirmed pleural effusion. (en)">
+				>
+				["at0040"] = <
+					text = <"*Infiltrate (en)">
+					description = <"*Detected on chest X-ray or CT scan (en)">
+				>
+				["at0041"] = <
+					text = <"*Endobronchial involvement (en)">
+					description = <"*Endobronchial pseudotumor or ulcerative lesions. NB: smooth stenotic lesions to be included in VDI; subglottic lesions to be recorded in the ENT section. (en)">
+				>
+				["at0042"] = <
+					text = <"*Massive haemoptysis / alveolar haemorrhage (en)">
+					description = <"*Major pulmonary bleeding, with shifting pulmonary infiltrates (en)">
+				>
+				["at0043"] = <
+					text = <"*Respiratory failure (en)">
+					description = <"*The need for artificial ventilation (en)">
+				>
+				["at0044"] = <
+					text = <"*Loss of pulses (en)">
+					description = <"*Clinical absence of peripheral arterial pulsation in any limb (en)">
+				>
+				["at0045"] = <
+					text = <"*Valvular heart disease (en)">
+					description = <"*Clinical or echo detection of aortic / mitral / pulmonary valve involvement (en)">
+				>
+				["at0046"] = <
+					text = <"*Pericarditis (en)">
+					description = <"*Pericardial pain / friction rub on clinical assessment (en)">
+				>
+				["at0047"] = <
+					text = <"*Ischaemic cardiac pain (en)">
+					description = <"*Typical clinical history of cardiac pain leading to myocardial infarction or angina (en)">
+				>
+				["at0048"] = <
+					text = <"*Cardiomyopathy (en)">
+					description = <"*Significant impairment of cardiac function due to poor ventricular wall motion confirmed on echocardiography (en)">
+				>
+				["at0049"] = <
+					text = <"*Congestive cardiac failure (en)">
+					description = <"*Heart failure by history or clinical examination (en)">
+				>
+				["at0050"] = <
+					text = <"*Peritonitis (en)">
+					description = <"*Typical abdominal pain suggestive of peritoneal involvement (en)">
+				>
+				["at0051"] = <
+					text = <"*Bloody diarrhoea (en)">
+					description = <"*Of recent onset (en)">
+				>
+				["at0052"] = <
+					text = <"*Ischaemic abdominal pain (en)">
+					description = <"*Typical abdominal pain suggestive of bowel ischaemia, confirmed by imaging or surgery (en)">
+				>
+				["at0053"] = <
+					text = <"*Hypertension (en)">
+					description = <"*Diastolic >95 mm Hg (en)">
+				>
+				["at0054"] = <
+					text = <"*Proteinuria (en)">
+					description = <"*>1+ on urinalysis or >0.2g/24 hours (en)">
+				>
+				["at0055"] = <
+					text = <"*Haematuria (en)">
+					description = <"*‘Moderate’ on urinalysis or ≥10 RBC per high power field, usually accompanied by red cell casts (en)">
+				>
+				["at0056"] = <
+					text = <"*Serum creatinine 125-249 μmol/L (en)">
+					description = <"*At first assessment only (en)">
+				>
+				["at0057"] = <
+					text = <"*Serum creatinine 250-499 μmol/L (en)">
+					description = <"*At first assessment only (en)">
+				>
+				["at0058"] = <
+					text = <"*Serum creatinine ≥500 μmol/L (en)">
+					description = <"*At first assessment only (en)">
+				>
+				["at0059"] = <
+					text = <"*>30% rise in creatinine or >25% fall in creatinine clearance (en)">
+					description = <"*Progressive worsening of renal function. Can be used at each assessment if the renal function has deteriorated from prior value (en)">
+				>
+				["at0060"] = <
+					text = <"*Headache (en)">
+					description = <"*Unaccustomed & persistent headache (en)">
+				>
+				["at0061"] = <
+					text = <"*Meningitis (en)">
+					description = <"*Clinical evidence of meningism (en)">
+				>
+				["at0062"] = <
+					text = <"*Organic confusion (en)">
+					description = <"*Impaired orientation, memory or other intellectual function in the absence of metabolic, psychiatric, pharmacological or toxic causes. (en)">
+				>
+				["at0063"] = <
+					text = <"*Seizures (not hypertensive) (en)">
+					description = <"*Clinical or EEG evidence of aberrant electrical activity in the brain (en)">
+				>
+				["at0064"] = <
+					text = <"*Stroke (en)">
+					description = <"*Focal neurological signs lasting >24 hours due to a CNS vascular event (en)">
+				>
+				["at0065"] = <
+					text = <"*Spinal cord lesion (en)">
+					description = <"*Clinical or imaging evidence of spinal cord involvement (en)">
+				>
+				["at0066"] = <
+					text = <"*Cranial nerve palsy (en)">
+					description = <"*Clinical evidence of cranial nerve palsy – score VIII nerve palsy as sensorineural hearing loss, do not score ocular palsies if they secondary to pressure effects (en)">
+				>
+				["at0067"] = <
+					text = <"*Sensory peripheral neuropathy (en)">
+					description = <"*Objective sensory deficit in a non-dermatomal distribution (en)">
+				>
+				["at0068"] = <
+					text = <"*Mononeuritis multiplex (en)">
+					description = <"*Single or multiple specific motor nerve palsies (en)">
+				>
+				["at0069"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"*New/Worse (en)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"*New/Worse (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"*New/Worse (en)">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0101"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0102"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0103"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0105"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0109"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0110"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0112"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0113"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0114"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0115"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0116"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0117"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0118"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0120"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0124"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0125"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0126"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0127"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0128"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0129"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0130"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0131"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0132"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0133"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0134"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0135"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0136"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0137"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0138"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0139"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0140"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0141"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0142"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0143"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0144"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0145"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0146"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0147"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0148"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0149"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0150"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0151"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0152"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0153"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0154"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0156"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0157"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0168"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0169"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0170"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0171"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0172"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0173"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0174"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0175"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0176"] = <
+					text = <"*Persistent (en)">
+					description = <"">
+				>
+				["at0177"] = <
+					text = <"*New/worse (en)">
+					description = <"">
+				>
+				["at0178"] = <
+					text = <"*Persistent score (en)">
+					description = <"">
+				>
+				["at0179"] = <
+					text = <"*New/Worse score (en)">
+					description = <"">
+				>
+			>
+		>
+	>
