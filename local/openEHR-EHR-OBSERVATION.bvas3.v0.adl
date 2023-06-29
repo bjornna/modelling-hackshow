@@ -38,7 +38,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8a8ffec2ce55fbada0799895eff735d9">
+		["MD5-CAM-1.0.1"] = <"f002dd3bbf23259ee37ab43d770e8270">
 		["build_uid"] = <"46bed89c-e619-3cc9-86c6-39c68b64058f">
 	>
 
@@ -752,7 +752,7 @@ ontology
 					description = <"">
 				>
 				["at0076"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0077"] = <
@@ -760,7 +760,7 @@ ontology
 					description = <"">
 				>
 				["at0078"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0079"] = <
@@ -768,7 +768,7 @@ ontology
 					description = <"">
 				>
 				["at0080"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0081"] = <
@@ -776,7 +776,7 @@ ontology
 					description = <"">
 				>
 				["at0082"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0083"] = <
@@ -784,7 +784,7 @@ ontology
 					description = <"">
 				>
 				["at0084"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0085"] = <
@@ -792,7 +792,7 @@ ontology
 					description = <"">
 				>
 				["at0086"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0087"] = <
@@ -800,7 +800,7 @@ ontology
 					description = <"">
 				>
 				["at0088"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0089"] = <
@@ -808,7 +808,7 @@ ontology
 					description = <"">
 				>
 				["at0090"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0091"] = <
@@ -816,7 +816,7 @@ ontology
 					description = <"">
 				>
 				["at0092"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0093"] = <
@@ -824,7 +824,7 @@ ontology
 					description = <"">
 				>
 				["at0094"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0095"] = <
@@ -832,7 +832,7 @@ ontology
 					description = <"">
 				>
 				["at0096"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0097"] = <
@@ -840,7 +840,7 @@ ontology
 					description = <"">
 				>
 				["at0098"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0099"] = <
@@ -848,11 +848,11 @@ ontology
 					description = <"">
 				>
 				["at0100"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0101"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0102"] = <
@@ -860,7 +860,7 @@ ontology
 					description = <"">
 				>
 				["at0103"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0104"] = <
@@ -868,7 +868,7 @@ ontology
 					description = <"">
 				>
 				["at0105"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0106"] = <
@@ -876,7 +876,7 @@ ontology
 					description = <"">
 				>
 				["at0107"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0108"] = <
@@ -884,7 +884,7 @@ ontology
 					description = <"">
 				>
 				["at0109"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0110"] = <
@@ -892,7 +892,7 @@ ontology
 					description = <"">
 				>
 				["at0111"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0112"] = <
@@ -900,7 +900,7 @@ ontology
 					description = <"">
 				>
 				["at0113"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0114"] = <
@@ -908,7 +908,7 @@ ontology
 					description = <"">
 				>
 				["at0115"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0116"] = <
@@ -916,11 +916,11 @@ ontology
 					description = <"">
 				>
 				["at0117"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0118"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0119"] = <
@@ -928,7 +928,7 @@ ontology
 					description = <"">
 				>
 				["at0120"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0121"] = <
@@ -936,7 +936,7 @@ ontology
 					description = <"">
 				>
 				["at0122"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0123"] = <
@@ -944,7 +944,7 @@ ontology
 					description = <"">
 				>
 				["at0124"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0125"] = <
@@ -952,7 +952,7 @@ ontology
 					description = <"">
 				>
 				["at0126"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0127"] = <
@@ -960,7 +960,7 @@ ontology
 					description = <"">
 				>
 				["at0128"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0129"] = <
@@ -968,7 +968,7 @@ ontology
 					description = <"">
 				>
 				["at0130"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0131"] = <
@@ -976,7 +976,7 @@ ontology
 					description = <"">
 				>
 				["at0132"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0133"] = <
@@ -984,7 +984,7 @@ ontology
 					description = <"">
 				>
 				["at0134"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0135"] = <
@@ -992,7 +992,7 @@ ontology
 					description = <"">
 				>
 				["at0136"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0137"] = <
@@ -1000,7 +1000,7 @@ ontology
 					description = <"">
 				>
 				["at0138"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0139"] = <
@@ -1008,7 +1008,7 @@ ontology
 					description = <"">
 				>
 				["at0140"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0141"] = <
@@ -1016,7 +1016,7 @@ ontology
 					description = <"">
 				>
 				["at0142"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0143"] = <
@@ -1024,7 +1024,7 @@ ontology
 					description = <"">
 				>
 				["at0144"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0145"] = <
@@ -1032,7 +1032,7 @@ ontology
 					description = <"">
 				>
 				["at0146"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0147"] = <
@@ -1040,7 +1040,7 @@ ontology
 					description = <"">
 				>
 				["at0148"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0149"] = <
@@ -1048,7 +1048,7 @@ ontology
 					description = <"">
 				>
 				["at0150"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0151"] = <
@@ -1056,7 +1056,7 @@ ontology
 					description = <"">
 				>
 				["at0152"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0153"] = <
@@ -1064,7 +1064,7 @@ ontology
 					description = <"">
 				>
 				["at0154"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0155"] = <
@@ -1072,7 +1072,7 @@ ontology
 					description = <"">
 				>
 				["at0156"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0157"] = <
@@ -1080,11 +1080,11 @@ ontology
 					description = <"">
 				>
 				["at0158"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0159"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0160"] = <
@@ -1092,7 +1092,7 @@ ontology
 					description = <"">
 				>
 				["at0161"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0162"] = <
@@ -1100,7 +1100,7 @@ ontology
 					description = <"">
 				>
 				["at0163"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0164"] = <
@@ -1108,7 +1108,7 @@ ontology
 					description = <"">
 				>
 				["at0165"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0166"] = <
@@ -1116,7 +1116,7 @@ ontology
 					description = <"">
 				>
 				["at0167"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0168"] = <
@@ -1124,7 +1124,7 @@ ontology
 					description = <"">
 				>
 				["at0169"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0170"] = <
@@ -1132,7 +1132,7 @@ ontology
 					description = <"">
 				>
 				["at0171"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0172"] = <
@@ -1140,7 +1140,7 @@ ontology
 					description = <"">
 				>
 				["at0173"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0174"] = <
@@ -1148,7 +1148,7 @@ ontology
 					description = <"">
 				>
 				["at0175"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0176"] = <
@@ -1156,7 +1156,7 @@ ontology
 					description = <"">
 				>
 				["at0177"] = <
-					text = <"New/worse">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0178"] = <
@@ -1172,15 +1172,15 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Birmingham Vasculitis Activity Score (BVAS) v3 (en)">
-					description = <"*Birmingham Vasculitis Activity Score (BVAS) v3 (en)">
+					text = <"Birmingham Vasculitis Activity Score (BVAS) v3">
+					description = <"Birmingham Vasculitis Activity Score (BVAS) v3">
 				>
 				["at0001"] = <
 					text = <"History">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"*Any event (en)">
+					text = <"Any event">
 					description = <"">
 				>
 				["at0003"] = <
@@ -1188,707 +1188,707 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*General (en)">
+					text = <"General">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*Cutaneous (en)">
+					text = <"Cutaneous">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*Mucous Membranes / eyes (en)">
+					text = <"Mucous Membranes / eyes">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*ENT (en)">
+					text = <"ENT">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*Chest (en)">
+					text = <"Chest">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*Cardiovascular (en)">
+					text = <"Cardiovascular">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"*Abdominal (en)">
+					text = <"Abdominal">
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"*Renal (en)">
+					text = <"Renal">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"*Nervous system (en)">
+					text = <"Nervous system">
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*Myalgia (en)">
-					description = <"*Pain in the muscles (en)">
+					text = <"Myalgia">
+					description = <"Pain in the muscles">
 				>
 				["at0014"] = <
-					text = <"*Arthralgia or arthritis (en)">
-					description = <"*Pain in the joints or joint inflammation (en)">
+					text = <"Arthralgia or arthritis">
+					description = <"Pain in the joints or joint inflammation">
 				>
 				["at0015"] = <
-					text = <"*Fever ≥38 °C (en)">
-					description = <"*Documented oral / axillary temperature. If rectal temperature is measured, raise threshold to 38.5° C (en)">
+					text = <"Fever ≥38 °C">
+					description = <"Documented oral / axillary temperature. If rectal temperature is measured, raise threshold to 38.5° C">
 				>
 				["at0016"] = <
-					text = <"*Weight Loss ≥2 kg (en)">
-					description = <"*Loss of dry body weight without dieting (en)">
+					text = <"Weight Loss ≥2 kg">
+					description = <"Loss of dry body weight without dieting">
 				>
 				["at0017"] = <
-					text = <"*Infarct (en)">
-					description = <"*Area of tissue necrosis or splinter haemorrhages (en)">
+					text = <"Infarct">
+					description = <"Area of tissue necrosis or splinter haemorrhages">
 				>
 				["at0018"] = <
-					text = <"*Purpura (en)">
-					description = <"*Subcutaneous or submucosal haemorrhage in the absence of trauma (en)">
+					text = <"Purpura">
+					description = <"Subcutaneous or submucosal haemorrhage in the absence of trauma">
 				>
 				["at0019"] = <
-					text = <"*Ulcer (en)">
-					description = <"*A disruption in the continuity of the skin (en)">
+					text = <"Ulcer">
+					description = <"A disruption in the continuity of the skin">
 				>
 				["at0020"] = <
-					text = <"*Gangrene (en)">
-					description = <"*Extensive tissue necrosis (en)">
+					text = <"Gangrene">
+					description = <"Extensive tissue necrosis">
 				>
 				["at0021"] = <
-					text = <"*Other skin vasculitis (en)">
-					description = <"*Livedo reticularis, subcutaneous nodules, erythema nodosum, etc (en)">
+					text = <"Other skin vasculitis">
+					description = <"Livedo reticularis, subcutaneous nodules, erythema nodosum, etc">
 				>
 				["at0022"] = <
-					text = <"*Mouth ulcers / granulomata (en)">
-					description = <"*Aphthous stomatitis, deep ulcers, strawberry gingival hyperplasia (en)">
+					text = <"Mouth ulcers / granulomata">
+					description = <"Aphthous stomatitis, deep ulcers, strawberry gingival hyperplasia">
 				>
 				["at0023"] = <
-					text = <"*Genital ulcers (en)">
-					description = <"*Ulcers on the genitalia or perineum (en)">
+					text = <"Genital ulcers">
+					description = <"Ulcers on the genitalia or perineum">
 				>
 				["at0024"] = <
-					text = <"*Adnexal inflammation (en)">
-					description = <"*Salivary or lacrimal gland inflammation. (en)">
+					text = <"Adnexal inflammation">
+					description = <"Salivary or lacrimal gland inflammation.">
 				>
 				["at0025"] = <
-					text = <"*Significant proptosis (en)">
-					description = <"*>2 mm protrusion of the eyeball (en)">
+					text = <"Significant proptosis">
+					description = <">2 mm protrusion of the eyeball">
 				>
 				["at0026"] = <
-					text = <"*Scleritis / Episcleritis (en)">
-					description = <"*Episcleritis Inflammation of the sclera (en)">
+					text = <"Scleritis / Episcleritis">
+					description = <"Episcleritis Inflammation of the sclera">
 				>
 				["at0027"] = <
-					text = <"*Conjunctivitis / Blepharitis / Keratitis (en)">
-					description = <"*Inflammation of the conjunctiva, eyelids or cornea - but not due to sicca syndrome (en)">
+					text = <"Conjunctivitis / Blepharitis / Keratitis">
+					description = <"Inflammation of the conjunctiva, eyelids or cornea - but not due to sicca syndrome">
 				>
 				["at0028"] = <
-					text = <"*Blurred vision (en)">
-					description = <"*Deterioration of visual acuity from previous or baseline (en)">
+					text = <"Blurred vision">
+					description = <"Deterioration of visual acuity from previous or baseline">
 				>
 				["at0029"] = <
-					text = <"*Sudden visual loss (en)">
-					description = <"*Acute loss of vision (en)">
+					text = <"Sudden visual loss">
+					description = <"Acute loss of vision">
 				>
 				["at0030"] = <
-					text = <"*Uveitis (en)">
-					description = <"*Inflammation of the uvea (iris, ciliary body, choroid) (en)">
+					text = <"Uveitis">
+					description = <"Inflammation of the uvea (iris, ciliary body, choroid)">
 				>
 				["at0031"] = <
-					text = <"*Retinal changes (vasculitis, thrombosis / exudate / haemorrhage) (en)">
-					description = <"*Sheathing of retinal vessels or evidence of retinal vasculitis on fluorescein angiography; thrombotic retinal arterial or venous occlusion; soft retinal exudate (exclude hard exudates) / retinal haemorrhage (en)">
+					text = <"Retinal changes (vasculitis, thrombosis / exudate / haemorrhage)">
+					description = <"Sheathing of retinal vessels or evidence of retinal vasculitis on fluorescein angiography; thrombotic retinal arterial or venous occlusion; soft retinal exudate (exclude hard exudates) / retinal haemorrhage">
 				>
 				["at0032"] = <
-					text = <"*Bloody nasal discharge / crusts / ulcers / granulomata (en)">
-					description = <"*Bloody, mucopurulent, nasal secretion, light or dark brown crusts frequently obstructing the nose, nasal ulcers or granulomatous lesions observed on rhinoscopy (en)">
+					text = <"Bloody nasal discharge / crusts / ulcers / granulomata">
+					description = <"Bloody, mucopurulent, nasal secretion, light or dark brown crusts frequently obstructing the nose, nasal ulcers or granulomatous lesions observed on rhinoscopy">
 				>
 				["at0033"] = <
-					text = <"*Paranasal sinus involvement (en)">
-					description = <"*Tenderness or pain over paranasal sinuses (usually confirmed by imaging) (en)">
+					text = <"Paranasal sinus involvement">
+					description = <"Tenderness or pain over paranasal sinuses (usually confirmed by imaging)">
 				>
 				["at0034"] = <
-					text = <"*Subglottic stenosis (en)">
-					description = <"*Stridor or hoarseness due to inflammation and narrowing of the subglottic area observed by laryngoscopy (en)">
+					text = <"Subglottic stenosis">
+					description = <"Stridor or hoarseness due to inflammation and narrowing of the subglottic area observed by laryngoscopy">
 				>
 				["at0035"] = <
-					text = <"*Conductive hearing loss (en)">
-					description = <"*Hearing loss due to middle ear involvement (usually confirmed by audiometry) (en)">
+					text = <"Conductive hearing loss">
+					description = <"Hearing loss due to middle ear involvement (usually confirmed by audiometry)">
 				>
 				["at0036"] = <
-					text = <"*Sensorineural hearing loss (en)">
-					description = <"*Hearing loss due to auditory nerve or cochlear damage (usually confirmed by audiometry) (en)">
+					text = <"Sensorineural hearing loss">
+					description = <"Hearing loss due to auditory nerve or cochlear damage (usually confirmed by audiometry)">
 				>
 				["at0037"] = <
-					text = <"*Wheeze (en)">
-					description = <"*Wheeze on clinical examination (en)">
+					text = <"Wheeze">
+					description = <"Wheeze on clinical examination">
 				>
 				["at0038"] = <
-					text = <"*Nodules or cavities (en)">
-					description = <"*New lesions detected on imaging (en)">
+					text = <"Nodules or cavities">
+					description = <"New lesions detected on imaging">
 				>
 				["at0039"] = <
-					text = <"*Pleural effusion / pleurisy (en)">
-					description = <"*Pleural pain and/or friction rub on clinical assessment; radiologically confirmed pleural effusion. (en)">
+					text = <"Pleural effusion / pleurisy">
+					description = <"Pleural pain and/or friction rub on clinical assessment; radiologically confirmed pleural effusion.">
 				>
 				["at0040"] = <
-					text = <"*Infiltrate (en)">
-					description = <"*Detected on chest X-ray or CT scan (en)">
+					text = <"Infiltrate">
+					description = <"Detected on chest X-ray or CT scan">
 				>
 				["at0041"] = <
-					text = <"*Endobronchial involvement (en)">
-					description = <"*Endobronchial pseudotumor or ulcerative lesions. NB: smooth stenotic lesions to be included in VDI; subglottic lesions to be recorded in the ENT section. (en)">
+					text = <"Endobronchial involvement">
+					description = <"Endobronchial pseudotumor or ulcerative lesions. NB: smooth stenotic lesions to be included in VDI; subglottic lesions to be recorded in the ENT section.">
 				>
 				["at0042"] = <
-					text = <"*Massive haemoptysis / alveolar haemorrhage (en)">
-					description = <"*Major pulmonary bleeding, with shifting pulmonary infiltrates (en)">
+					text = <"Massive haemoptysis / alveolar haemorrhage">
+					description = <"Major pulmonary bleeding, with shifting pulmonary infiltrates">
 				>
 				["at0043"] = <
-					text = <"*Respiratory failure (en)">
-					description = <"*The need for artificial ventilation (en)">
+					text = <"Respiratory failure">
+					description = <"The need for artificial ventilation">
 				>
 				["at0044"] = <
-					text = <"*Loss of pulses (en)">
-					description = <"*Clinical absence of peripheral arterial pulsation in any limb (en)">
+					text = <"Loss of pulses">
+					description = <"Clinical absence of peripheral arterial pulsation in any limb">
 				>
 				["at0045"] = <
-					text = <"*Valvular heart disease (en)">
-					description = <"*Clinical or echo detection of aortic / mitral / pulmonary valve involvement (en)">
+					text = <"Valvular heart disease">
+					description = <"Clinical or echo detection of aortic / mitral / pulmonary valve involvement">
 				>
 				["at0046"] = <
-					text = <"*Pericarditis (en)">
-					description = <"*Pericardial pain / friction rub on clinical assessment (en)">
+					text = <"Pericarditis">
+					description = <"Pericardial pain / friction rub on clinical assessment">
 				>
 				["at0047"] = <
-					text = <"*Ischaemic cardiac pain (en)">
-					description = <"*Typical clinical history of cardiac pain leading to myocardial infarction or angina (en)">
+					text = <"Ischaemic cardiac pain">
+					description = <"Typical clinical history of cardiac pain leading to myocardial infarction or angina">
 				>
 				["at0048"] = <
-					text = <"*Cardiomyopathy (en)">
-					description = <"*Significant impairment of cardiac function due to poor ventricular wall motion confirmed on echocardiography (en)">
+					text = <"Cardiomyopathy">
+					description = <"Significant impairment of cardiac function due to poor ventricular wall motion confirmed on echocardiography">
 				>
 				["at0049"] = <
-					text = <"*Congestive cardiac failure (en)">
-					description = <"*Heart failure by history or clinical examination (en)">
+					text = <"Congestive cardiac failure">
+					description = <"Heart failure by history or clinical examination">
 				>
 				["at0050"] = <
-					text = <"*Peritonitis (en)">
-					description = <"*Typical abdominal pain suggestive of peritoneal involvement (en)">
+					text = <"Peritonitis">
+					description = <"Typical abdominal pain suggestive of peritoneal involvement">
 				>
 				["at0051"] = <
-					text = <"*Bloody diarrhoea (en)">
-					description = <"*Of recent onset (en)">
+					text = <"Bloody diarrhoea">
+					description = <"Of recent onset">
 				>
 				["at0052"] = <
-					text = <"*Ischaemic abdominal pain (en)">
-					description = <"*Typical abdominal pain suggestive of bowel ischaemia, confirmed by imaging or surgery (en)">
+					text = <"Ischaemic abdominal pain">
+					description = <"Typical abdominal pain suggestive of bowel ischaemia, confirmed by imaging or surgery">
 				>
 				["at0053"] = <
-					text = <"*Hypertension (en)">
-					description = <"*Diastolic >95 mm Hg (en)">
+					text = <"Hypertension">
+					description = <"Diastolic >95 mm Hg">
 				>
 				["at0054"] = <
-					text = <"*Proteinuria (en)">
-					description = <"*>1+ on urinalysis or >0.2g/24 hours (en)">
+					text = <"Proteinuria">
+					description = <">1+ on urinalysis or >0.2g/24 hours">
 				>
 				["at0055"] = <
-					text = <"*Haematuria (en)">
-					description = <"*‘Moderate’ on urinalysis or ≥10 RBC per high power field, usually accompanied by red cell casts (en)">
+					text = <"Haematuria">
+					description = <"‘Moderate’ on urinalysis or ≥10 RBC per high power field, usually accompanied by red cell casts">
 				>
 				["at0056"] = <
-					text = <"*Serum creatinine 125-249 μmol/L (en)">
-					description = <"*At first assessment only (en)">
+					text = <"Serum creatinine 125-249 μmol/L">
+					description = <"At first assessment only">
 				>
 				["at0057"] = <
-					text = <"*Serum creatinine 250-499 μmol/L (en)">
-					description = <"*At first assessment only (en)">
+					text = <"Serum creatinine 250-499 μmol/L">
+					description = <"At first assessment only">
 				>
 				["at0058"] = <
-					text = <"*Serum creatinine ≥500 μmol/L (en)">
-					description = <"*At first assessment only (en)">
+					text = <"Serum creatinine ≥500 μmol/L">
+					description = <"At first assessment only">
 				>
 				["at0059"] = <
-					text = <"*>30% rise in creatinine or >25% fall in creatinine clearance (en)">
-					description = <"*Progressive worsening of renal function. Can be used at each assessment if the renal function has deteriorated from prior value (en)">
+					text = <">30% rise in creatinine or >25% fall in creatinine clearance">
+					description = <"Progressive worsening of renal function. Can be used at each assessment if the renal function has deteriorated from prior value">
 				>
 				["at0060"] = <
-					text = <"*Headache (en)">
-					description = <"*Unaccustomed & persistent headache (en)">
+					text = <"Headache">
+					description = <"Unaccustomed & persistent headache">
 				>
 				["at0061"] = <
-					text = <"*Meningitis (en)">
-					description = <"*Clinical evidence of meningism (en)">
+					text = <"Meningitis">
+					description = <"Clinical evidence of meningism">
 				>
 				["at0062"] = <
-					text = <"*Organic confusion (en)">
-					description = <"*Impaired orientation, memory or other intellectual function in the absence of metabolic, psychiatric, pharmacological or toxic causes. (en)">
+					text = <"Organic confusion">
+					description = <"Impaired orientation, memory or other intellectual function in the absence of metabolic, psychiatric, pharmacological or toxic causes.">
 				>
 				["at0063"] = <
-					text = <"*Seizures (not hypertensive) (en)">
-					description = <"*Clinical or EEG evidence of aberrant electrical activity in the brain (en)">
+					text = <"Seizures (not hypertensive)">
+					description = <"Clinical or EEG evidence of aberrant electrical activity in the brain">
 				>
 				["at0064"] = <
-					text = <"*Stroke (en)">
-					description = <"*Focal neurological signs lasting >24 hours due to a CNS vascular event (en)">
+					text = <"Stroke">
+					description = <"Focal neurological signs lasting >24 hours due to a CNS vascular event">
 				>
 				["at0065"] = <
-					text = <"*Spinal cord lesion (en)">
-					description = <"*Clinical or imaging evidence of spinal cord involvement (en)">
+					text = <"Spinal cord lesion">
+					description = <"Clinical or imaging evidence of spinal cord involvement">
 				>
 				["at0066"] = <
-					text = <"*Cranial nerve palsy (en)">
-					description = <"*Clinical evidence of cranial nerve palsy – score VIII nerve palsy as sensorineural hearing loss, do not score ocular palsies if they secondary to pressure effects (en)">
+					text = <"Cranial nerve palsy">
+					description = <"Clinical evidence of cranial nerve palsy – score VIII nerve palsy as sensorineural hearing loss, do not score ocular palsies if they secondary to pressure effects">
 				>
 				["at0067"] = <
-					text = <"*Sensory peripheral neuropathy (en)">
-					description = <"*Objective sensory deficit in a non-dermatomal distribution (en)">
+					text = <"Sensory peripheral neuropathy">
+					description = <"Objective sensory deficit in a non-dermatomal distribution">
 				>
 				["at0068"] = <
-					text = <"*Mononeuritis multiplex (en)">
-					description = <"*Single or multiple specific motor nerve palsies (en)">
+					text = <"Mononeuritis multiplex">
+					description = <"Single or multiple specific motor nerve palsies">
 				>
 				["at0069"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0070"] = <
-					text = <"*New/Worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0071"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0072"] = <
-					text = <"*New/Worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0073"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0074"] = <
-					text = <"*New/Worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0075"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0076"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0077"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0078"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0079"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0080"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0081"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0082"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0083"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0084"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0085"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0086"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0087"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0088"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0089"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0090"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0091"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0092"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0093"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0094"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0095"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0096"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0097"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0098"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0099"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0100"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0101"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0102"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0103"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0104"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0105"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0106"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0107"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0108"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0109"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0110"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0111"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0112"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0113"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0114"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0115"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0116"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0117"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0118"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0119"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0120"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0121"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0122"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0123"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0124"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0125"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0126"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0127"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0128"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0129"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0130"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0131"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0132"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0133"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0134"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0135"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0136"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0137"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0138"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0139"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0140"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0141"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0142"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0143"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0144"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0145"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0146"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0147"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0148"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0149"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0150"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0151"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0152"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0153"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0154"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0155"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0156"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0157"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0158"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0159"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0160"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0161"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0162"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0163"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0164"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0165"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0166"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0167"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0168"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0169"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0170"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0171"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0172"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0173"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0174"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0175"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0176"] = <
-					text = <"*Persistent (en)">
+					text = <"Persistent">
 					description = <"">
 				>
 				["at0177"] = <
-					text = <"*New/worse (en)">
+					text = <"New/Worse">
 					description = <"">
 				>
 				["at0178"] = <
-					text = <"*Persistent score (en)">
+					text = <"Persistent score">
 					description = <"">
 				>
 				["at0179"] = <
-					text = <"*New/Worse score (en)">
+					text = <"New/Worse score">
 					description = <"">
 				>
 			>
