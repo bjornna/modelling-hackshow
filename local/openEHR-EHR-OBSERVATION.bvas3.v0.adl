@@ -25,11 +25,14 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			purpose = <"The BVAS v3 assesses symptoms and signs of systemic vasculitis, both persistent and new or worsening ones. It consists of 9 sections, each with several items that need to be rated, if present.">
+			keywords = <"reumatologi", ...>
 			copyright = <"© openEHR Foundation">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"The BVAS v3 assesses symptoms and signs of systemic vasculitis, both persistent and new or worsening ones. It consists of 9 sections, each with several items that need to be rated, if present.">
+			keywords = <"Rheumatology", ...>
 		>
 	>
 	other_details = <
@@ -40,6 +43,10 @@ description
 		["custodian_namespace"] = <"org.openehr">
 		["MD5-CAM-1.0.1"] = <"f002dd3bbf23259ee37ab43d770e8270">
 		["build_uid"] = <"46bed89c-e619-3cc9-86c6-39c68b64058f">
+		["references"] = <"Mukhtyar C, et al. Modification and validation of the Birmingham Vasculitis Activity Score (version 3) Ann Rheum Dis. 2008;Dec 3.
+
+UNN: https://unn.no/Documents/Kvalitetsregistre/Norsk%20Vaskulittregister%20og%20biobank/BVASv3_scoring.pdf 
+MDAPP: https://www.mdapp.co/birmingham-vasculitis-activity-score-bvas-v3-calculator-386/">
 	>
 
 definition
