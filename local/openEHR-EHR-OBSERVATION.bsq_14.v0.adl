@@ -1,0 +1,128 @@
+archetype (adl_version=1.4; uid=85e209c2-5f1e-4ce4-a0b8-0ea172188d08)
+	openEHR-EHR-OBSERVATION.bsq_14.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2023-07-19">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"5aed0507-648f-3d19-95b2-d5b5d9d37c2e">
+		["MD5-CAM-1.0.1"] = <"20ab9ba24c5d01d9829242340e78e542">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Body Shape Questionnaire
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Har du vært så bekymret for kroppsfasongen din at du har følt du burde slanke deg?
+										value matches {
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008],
+											4|[local::at0009],
+											5|[local::at0010],
+											6|[local::at0011]
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Har det å være sammen med tynne personer gjort deg forlegen i forhold til din egen kropp?
+										value matches {
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008],
+											4|[local::at0009],
+											5|[local::at0010],
+											6|[local::at0011]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE matches {*}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Body Shape Questionnaire">
+					description = <"BSQ-14">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Har du vært så bekymret for kroppsfasongen din at du har følt du burde slanke deg?">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Har det å være sammen med tynne personer gjort deg forlegen i forhold til din egen kropp?">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Aldri">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Sjelden">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Noen ganger">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Ofte">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Veldig ofte">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Alltid">
+					description = <"">
+				>
+			>
+		>
+	>
