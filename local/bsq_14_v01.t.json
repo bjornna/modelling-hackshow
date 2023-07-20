@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "d5eff5eb02fbf8fa98677e07679661f6",
+      "MD5-CAM-1.0.1" : "50055ca1d9d516ee0ef20118f3b3c14d",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -330,7 +330,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "bsq_14_v01",
+          "text" : "BSQ-14 (Body Shape Questionnaire, short version)",
           "description" : "Interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell."
         }
       }
