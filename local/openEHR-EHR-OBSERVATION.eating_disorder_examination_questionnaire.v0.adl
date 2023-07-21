@@ -33,6 +33,7 @@ Subskalaer:
 - Global EDE-Q skår: gjennomsnitt av de fire subskalene
 
 https://oslo-universitetssykehus.no/seksjon/Documents/SK%C3%85RINGSN%C3%98KLER%20OG%20NORMER%20aug%2019.pdf ">
+			keywords = <"eating", ...>
 		>
 	>
 	other_details = <
@@ -72,7 +73,7 @@ Reas DL, Overas M, Ro O. (2012). Norms for the Eating Disorder Examination Quest
 Ro O, Reas DL, Stedal K. (2015). Eating Disorder Examination Questionnaire (EDE-Q) in Norwegian Adults: Discrimination between Female Controls and Eating Disorder Patients. European Eating Disorders Review, 23, 408-12.
 
 Dahlgren CL, Stedal K, Ro O. (2017). Eating Disorder Examination Questionnaire (EDE-Q) and Clinical Impairment Assessment (CIA): clinical norms and functional impairment in male and female adults with eating disorders. Nordic journal of psychiatry, 71, 256-61.">
-		["MD5-CAM-1.0.1"] = <"b1afde4f6585575d9d0d1225592bc457">
+		["MD5-CAM-1.0.1"] = <"6e6f4c35ef1f49cc942bee6513954cd8">
 	>
 
 definition
@@ -771,22 +772,27 @@ spørsmålene kun handler om de siste fire ukene (28 dagene). ">
 				["at0073"] = <
 					text = <"Restriksjon">
 					description = <"">
+					comment = <"Gjennomsnitt av spørsmål 1, 2, 3, 4 og 5.">
 				>
 				["at0074"] = <
 					text = <"Bekymring for spising">
 					description = <"">
+					comment = <"Gjennomsnitt av spørsmål 7, 9, 19, 20 og 21">
 				>
 				["at0075"] = <
 					text = <"Bekymring for vekt">
 					description = <"">
+					comment = <"Gjennomsnitt av spørsmål 8, 12, 22, 24 og 25 ">
 				>
 				["at0076"] = <
 					text = <"Bekymring for figur">
 					description = <"">
+					comment = <"Gjennomsnitt av spørsmål 6, 8, 10, 11, 23, 26, 27 og 28">
 				>
 				["at0077"] = <
 					text = <"Global EDE-Q skår">
 					description = <"">
+					comment = <"Gjennomsnitt av de fire subskalene">
 				>
 			>
 		>
