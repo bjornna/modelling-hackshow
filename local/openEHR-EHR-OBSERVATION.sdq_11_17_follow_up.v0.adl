@@ -18,6 +18,11 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			purpose = <"Impact-skåren kan være et nyttig supplement til problemskåren, men med det foreliggende norske datagrunnlaget må Impact-skåren tolkes med forsiktighet.
+
+Den norske versjonen av SDQ-T kan være egnet til å screene for psykiatriske diagnoser i selekterte utvalg med risiko for psykiske helseproblemer. Det er ikke grunnlag for å anbefale SDQ-T for universell screening. Man må være oppmerksom på at den prediktive verdi kan være lav slik at det kan bli relativt mange falske positive og/ eller negative hvis instrumentet brukes til screening i normalbefolkning.
+
+Instrumentet har dokumentert støtte for god diskriminant begrepsvaliditet. Mer forskning er imidlertid nødvendig for å få dokumentert den sammenfallende begrepsvaliditeten bedre ved å undersøke hvordan SDQ-T-skårer forholder seg til skårer fra tilsvarende, validerte instrumenter. Det er også behov for bedre normdata, ikke minst for eldre barn og ungdommer, og også studier som bruker SDQ for både foreldre, lærere og ungdom.">
 		>
 	>
 	other_details = <
@@ -27,11 +32,13 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"d0b4c2de-86a3-3678-83e5-671413366984">
-		["MD5-CAM-1.0.1"] = <"7c0639727e850a8955e900b9ee68f822">
+		["references"] = <"Papirversjonen kan brukes fritt for ikke-kommersielle formål, men man må ha tillatelse fra Robert Goodman for å benytte skjemaet elektronisk og betale en mindre avgift for dette.
+https://psyktestbarn.r-bup.no/no/artikler/sdq-t-strengths-and-difficulties-questionnaire-laererrapport#">
+		["MD5-CAM-1.0.1"] = <"d11d476bca4806a099ef34fd21962778">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Strengths and Difficulties Questionnaire (SDQ)
+	OBSERVATION[at0000] matches {    -- Sterke og svake sider
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -325,27 +332,27 @@ definition
 									}
 									CLUSTER[at0067] occurrences matches {0..1} matches {    -- Skåring
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0068] occurrences matches {0..1} matches {    -- Emosjonelle problemer
+											ELEMENT[at0068] occurrences matches {0..1} matches {    -- Emosjonelle symptomer
 												value matches {
 													DV_COUNT matches {*}
 												}
 											}
-											ELEMENT[at0069] occurrences matches {0..1} matches {    -- Skala for oppførselsproblemer
+											ELEMENT[at0069] occurrences matches {0..1} matches {    -- Atferdsproblemer
 												value matches {
 													DV_COUNT matches {*}
 												}
 											}
-											ELEMENT[at0070] occurrences matches {0..1} matches {    -- Skala for hyperaktivitet
+											ELEMENT[at0070] occurrences matches {0..1} matches {    -- Hyperaktivitet
 												value matches {
 													DV_COUNT matches {*}
 												}
 											}
-											ELEMENT[at0071] occurrences matches {0..1} matches {    -- Problemer med jevnaldrende
+											ELEMENT[at0071] occurrences matches {0..1} matches {    -- Problemer med venner
 												value matches {
 													DV_COUNT matches {*}
 												}
 											}
-											ELEMENT[at0072] occurrences matches {0..1} matches {    -- Prososial skala
+											ELEMENT[at0072] occurrences matches {0..1} matches {    -- Prososial atferd
 												value matches {
 													DV_COUNT matches {*}
 												}
@@ -389,7 +396,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"Strengths and Difficulties Questionnaire (SDQ)">
+					text = <"Sterke og svake sider">
 					description = <"sdq_11_17_follow_up">
 				>
 				["at0001"] = <
@@ -662,23 +669,23 @@ ontology
 					description = <"">
 				>
 				["at0068"] = <
-					text = <"Emosjonelle problemer">
+					text = <"Emosjonelle symptomer">
 					description = <"">
 				>
 				["at0069"] = <
-					text = <"Skala for oppførselsproblemer">
+					text = <"Atferdsproblemer">
 					description = <"">
 				>
 				["at0070"] = <
-					text = <"Skala for hyperaktivitet">
+					text = <"Hyperaktivitet">
 					description = <"">
 				>
 				["at0071"] = <
-					text = <"Problemer med jevnaldrende">
+					text = <"Problemer med venner">
 					description = <"">
 				>
 				["at0072"] = <
-					text = <"Prososial skala">
+					text = <"Prososial atferd">
 					description = <"">
 				>
 				["at0073"] = <
