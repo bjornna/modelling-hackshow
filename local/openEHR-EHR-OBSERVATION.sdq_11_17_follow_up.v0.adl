@@ -27,11 +27,11 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"d0b4c2de-86a3-3678-83e5-671413366984">
-		["MD5-CAM-1.0.1"] = <"6315c66e0082a8374fbaac61051b4727">
+		["MD5-CAM-1.0.1"] = <"7c0639727e850a8955e900b9ee68f822">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- sdq_11_17_follow_up
+	OBSERVATION[at0000] matches {    -- Strengths and Difficulties Questionnaire (SDQ)
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -219,7 +219,7 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									CLUSTER[at0057] occurrences matches {0..1} matches {    -- Impact
+									CLUSTER[at0057] occurrences matches {0..1} matches {    -- Innvirkning
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0058] occurrences matches {0..1} matches {    -- Samlet, synes du at du har vansker på ett eller flere av følgende områder: med følelser, konsentrasjon, oppførsel eller med å komme overens med andre mennesker ?
 												value matches {
@@ -389,7 +389,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"sdq_11_17_follow_up">
+					text = <"Strengths and Difficulties Questionnaire (SDQ)">
 					description = <"sdq_11_17_follow_up">
 				>
 				["at0001"] = <
@@ -618,7 +618,7 @@ ontology
 					comment = <"Benyttes ved oppfølgende undersøkelse. ">
 				>
 				["at0057"] = <
-					text = <"Impact">
+					text = <"Innvirkning">
 					description = <"">
 				>
 				["at0058"] = <
