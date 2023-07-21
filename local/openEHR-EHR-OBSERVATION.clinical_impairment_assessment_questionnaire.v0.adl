@@ -43,7 +43,7 @@ Reas DL, Ro O, Kapstad H, Lask B. (2010). Psychometric properties of the clinica
 Reas DL, Stedal K, Lindvall Dahlgren C, Ro O. (2016). Impairment due to eating disorder pathology: Identifying the cut-off score on the Clinical Impairment Assessment in a clinical and community sample. International Journal of Eating Disorders, 49, 635-8.
 
 Dahlgren CL, Stedal K, Ro O. (2017). Eating Disorder Examination Questionnaire (EDE-Q) and Clinical Impairment Assessment (CIA): clinical norms and functional impairment in male and female adults with eating disorders. Nordic journal of psychiatry, 71, 256-61.">
-		["MD5-CAM-1.0.1"] = <"0f11a568bba2e93b07e6a06bed765b0f">
+		["MD5-CAM-1.0.1"] = <"7eb27e444dd0ef7decb0db429eb5dbeb">
 	>
 
 definition
@@ -219,7 +219,7 @@ definition
 						}
 						width matches {
 							DV_DURATION matches {
-								value matches {PT28S}
+								value matches {P28D}
 							}
 						}
 					}
