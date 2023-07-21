@@ -27,7 +27,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"d0b4c2de-86a3-3678-83e5-671413366984">
-		["MD5-CAM-1.0.1"] = <"941e564969f7f85e81c9aaa574160ddc">
+		["MD5-CAM-1.0.1"] = <"9978d4c3e46a54d70ec4167f2ca5ff2c">
 	>
 
 definition
@@ -219,42 +219,18 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0033] occurrences matches {0..1} matches {    -- Etter at du kom til poliklinikken, er problemene dine blitt:
-										value matches {
-											1|[local::at0034],
-											2|[local::at0035],
-											3|[local::at0036],
-											4|[local::at0037],
-											5|[local::at0038]
-										}
-									}
-									ELEMENT[at0039] occurrences matches {0..1} matches {    -- Har det å komme til poliklinikken hjulpet på andre måter, for eksempel ved informasjon eller ved at problemene er blitt lettere å leve med?
-										value matches {
-											1|[local::at0040],
-											2|[local::at0041],
-											3|[local::at0042],
-											4|[local::at0043]
-										}
-									}
-									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Har du den siste måneden hatt vansker på ett eller flere av følgende områder: med følelser, konsentrasjon, oppførsel eller med å komme overens med andre mennesker?
-										value matches {
-											1|[local::at0045],
-											2|[local::at0046],
-											3|[local::at0047],
-											4|[local::at0048]
-										}
-									}
-									ELEMENT[at0049] occurrences matches {0..1} matches {    -- Forstyrrer eller plager vanskene deg?
-										value matches {
-											1|[local::at0040],
-											2|[local::at0041],
-											3|[local::at0042],
-											4|[local::at0043]
-										}
-									}
-									CLUSTER[at0050] occurrences matches {0..1} matches {    -- Virker vanskene inn på livet ditt på noen av disse områdene?
+									CLUSTER[at0056] occurrences matches {0..1} matches {    -- Oppfølging
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0051] occurrences matches {0..1} matches {    -- HJEMME / I FAMILIEN
+											ELEMENT[at0033] occurrences matches {0..1} matches {    -- Etter at du kom til poliklinikken, er problemene dine blitt:
+												value matches {
+													1|[local::at0034],
+													2|[local::at0035],
+													3|[local::at0036],
+													4|[local::at0037],
+													5|[local::at0038]
+												}
+											}
+											ELEMENT[at0039] occurrences matches {0..1} matches {    -- Har det å komme til poliklinikken hjulpet på andre måter, for eksempel ved informasjon eller ved at problemene er blitt lettere å leve med?
 												value matches {
 													1|[local::at0040],
 													2|[local::at0041],
@@ -262,7 +238,15 @@ definition
 													4|[local::at0043]
 												}
 											}
-											ELEMENT[at0052] occurrences matches {0..1} matches {    -- FORHOLD TIL VENNER
+											ELEMENT[at0044] occurrences matches {0..1} matches {    -- Har du den siste måneden hatt vansker på ett eller flere av følgende områder: med følelser, konsentrasjon, oppførsel eller med å komme overens med andre mennesker?
+												value matches {
+													1|[local::at0045],
+													2|[local::at0046],
+													3|[local::at0047],
+													4|[local::at0048]
+												}
+											}
+											ELEMENT[at0049] occurrences matches {0..1} matches {    -- Forstyrrer eller plager vanskene deg?
 												value matches {
 													1|[local::at0040],
 													2|[local::at0041],
@@ -270,7 +254,43 @@ definition
 													4|[local::at0043]
 												}
 											}
-											ELEMENT[at0053] occurrences matches {0..1} matches {    -- LÆRING PÅ SKOLEN
+											CLUSTER[at0050] occurrences matches {0..1} matches {    -- Virker vanskene inn på livet ditt på noen av disse områdene?
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0051] occurrences matches {0..1} matches {    -- HJEMME / I FAMILIEN
+														value matches {
+															1|[local::at0040],
+															2|[local::at0041],
+															3|[local::at0042],
+															4|[local::at0043]
+														}
+													}
+													ELEMENT[at0052] occurrences matches {0..1} matches {    -- FORHOLD TIL VENNER
+														value matches {
+															1|[local::at0040],
+															2|[local::at0041],
+															3|[local::at0042],
+															4|[local::at0043]
+														}
+													}
+													ELEMENT[at0053] occurrences matches {0..1} matches {    -- LÆRING PÅ SKOLEN
+														value matches {
+															1|[local::at0040],
+															2|[local::at0041],
+															3|[local::at0042],
+															4|[local::at0043]
+														}
+													}
+													ELEMENT[at0054] occurrences matches {0..1} matches {    -- FRITIDSAKTIVITETER
+														value matches {
+															1|[local::at0040],
+															2|[local::at0041],
+															3|[local::at0042],
+															4|[local::at0043]
+														}
+													}
+												}
+											}
+											ELEMENT[at0055] occurrences matches {0..1} matches {    -- Er vanskene en belastning for de rundt deg (familie, venner, lærere osv.)?
 												value matches {
 													1|[local::at0040],
 													2|[local::at0041],
@@ -278,22 +298,6 @@ definition
 													4|[local::at0043]
 												}
 											}
-											ELEMENT[at0054] occurrences matches {0..1} matches {    -- FRITIDSAKTIVITETER
-												value matches {
-													1|[local::at0040],
-													2|[local::at0041],
-													3|[local::at0042],
-													4|[local::at0043]
-												}
-											}
-										}
-									}
-									ELEMENT[at0055] occurrences matches {0..1} matches {    -- Er vanskene en belastning for de rundt deg (familie, venner, lærere osv.)?
-										value matches {
-											1|[local::at0040],
-											2|[local::at0041],
-											3|[local::at0042],
-											4|[local::at0043]
 										}
 									}
 								}
@@ -302,6 +306,9 @@ definition
 					}
 				}
 			}
+		}
+		protocol matches {
+			ITEM_TREE matches {*}
 		}
 	}
 
@@ -532,6 +539,11 @@ ontology
 				["at0055"] = <
 					text = <"Er vanskene en belastning for de rundt deg (familie, venner, lærere osv.)?">
 					description = <"">
+				>
+				["at0056"] = <
+					text = <"Oppfølging">
+					description = <"">
+					comment = <"Benyttes ved oppfølgende undersøkelse. ">
 				>
 			>
 		>
