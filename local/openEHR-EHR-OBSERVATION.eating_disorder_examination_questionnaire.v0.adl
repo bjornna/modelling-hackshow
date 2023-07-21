@@ -18,6 +18,21 @@ description
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			purpose = <"EDE-Q er et selvrapporteringsskjema basert på intervjuet EDE. Det tar 5-15 minutter å fylle ut skjemaet. Pasienten besvarer spørsmål om forekomst og frekvensen av de typiske patologiske atferds symptomer og de spesifikke kognitive symptomene ved spiseforstyrrelser de siste 4 ukene. Spørreskjemaet har 28 spørsmål og spørsmål om aktuell vekt, høyde og menstruasjon slik at BMI kan regnes ut. Dette spørreskjemaet er mye brukt i Norge og internasjonalt. 
+
+Det kan brukes av personer fra 14 år og oppover. I senere år et det internasjonalt utviklet flere kortere versjoner av EDE-Q med f. eks. 15 spørsmål men har ikke hittil blitt brukt i Norge. I likhet med EDE er EDE-Q oppdelt inn i fire subskalaer. For å få skåre på hver av subskalaene legger man sammen leddene som hører under den enkelte subskalaen (se oversikt nedenfor), og deler summen på antall ledd (regner ut gjennomsnittet). For å finne en samlet eller global EDE-Q skår, summeres de 4 subskalaskårene, og totalsummen deles på antallet subskalaer (dvs. 4). Noen av spørsmålene handler om frekvens av ulike typer atferd for eksempel overspising og hører ikke under en subskala, men gir verdifull klinisk informasjon.
+
+Spørreskjemaet har i mange studier vist gode psykometriske egenskaper. Som for EDE er gyldigheten av de 4 subskalaene er omdiskutert da statistiske analyser ikke finner en faktorstruktur med disse 4 subskalaer. Særlig er det mye overlapp mellom subskalaen bekymring for vekt og bekymring for figur.
+
+Subskalaer:
+
+- Restriksjon: gjennomsnitt av spørsmål 1, 2, 3, 4 og 5.
+- Bekymring for spising: gjennomsnitt av spørsmål 7, 9, 19, 20 og 21
+- Bekymring for vekt: gjennomsnitt av spørsmål 8, 12, 22, 24 og 25
+- Bekymring for figur: gjennomsnitt av spørsmål 6, 8, 10, 11, 23, 26, 27 og 28
+- Global EDE-Q skår: gjennomsnitt av de fire subskalene
+
+https://oslo-universitetssykehus.no/seksjon/Documents/SK%C3%85RINGSN%C3%98KLER%20OG%20NORMER%20aug%2019.pdf ">
 		>
 	>
 	other_details = <
@@ -57,7 +72,7 @@ Reas DL, Overas M, Ro O. (2012). Norms for the Eating Disorder Examination Quest
 Ro O, Reas DL, Stedal K. (2015). Eating Disorder Examination Questionnaire (EDE-Q) in Norwegian Adults: Discrimination between Female Controls and Eating Disorder Patients. European Eating Disorders Review, 23, 408-12.
 
 Dahlgren CL, Stedal K, Ro O. (2017). Eating Disorder Examination Questionnaire (EDE-Q) and Clinical Impairment Assessment (CIA): clinical norms and functional impairment in male and female adults with eating disorders. Nordic journal of psychiatry, 71, 256-61.">
-		["MD5-CAM-1.0.1"] = <"0d35eca04589b3c00c39db8d11ec92e9">
+		["MD5-CAM-1.0.1"] = <"b1afde4f6585575d9d0d1225592bc457">
 	>
 
 definition
@@ -486,10 +501,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Eating Disorder Examination Questionnaire (EDE-Q 6.0)">
-					description = <"Instruksjoner: Dette spørreskjema handler kun om de siste fire ukene (28 dager). Les
-hvert spørsmål nøye. Svar på alle spørsmålene.
-Spørsmål 1 til 12: Tegn en sirkel rundt det tallet til høyre som du synes passer best. Husk at
-spørsmålene kun handler om de siste fire ukene (28 dagene). ">
+					description = <"EDE-Q er et selvrapporteringsskjema basert på intervjuet EDE. Det tar 5-15 minutter å fylle ut skjemaet. Pasienten besvarer spørsmål om forekomst og frekvensen av de typiske patologiske atferds symptomer og de spesifikke kognitive symptomene ved spiseforstyrrelser de siste 4 ukene. Spørreskjemaet har 28 spørsmål og spørsmål om aktuell vekt, høyde og menstruasjon slik at BMI kan regnes ut. Dette spørreskjemaet er mye brukt i Norge og internasjonalt. ">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -581,7 +593,10 @@ spørsmålene kun handler om de siste fire ukene (28 dagene). ">
 				>
 				["at0023"] = <
 					text = <"Spørsmål 1-12">
-					description = <"">
+					description = <"Instruksjoner: Dette spørreskjema handler kun om de siste fire ukene (28 dager). Les
+hvert spørsmål nøye. Svar på alle spørsmålene.
+Spørsmål 1 til 12: Tegn en sirkel rundt det tallet til høyre som du synes passer best. Husk at
+spørsmålene kun handler om de siste fire ukene (28 dagene). ">
 				>
 				["at0024"] = <
 					text = <"Spørsmål 13-18">
