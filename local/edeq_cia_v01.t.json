@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "9338f2f70eeb2ee07e4b2dcfd7ef2649",
+      "MD5-CAM-1.0.1" : "95cb95d4c1ba1e6adb716c350ded5dff",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -510,8 +510,8 @@
                       "rmTypeName" : "DURATION",
                       "occurrences" : "1..1",
                       "constraint" : [ {
-                        "lower" : "PT28S",
-                        "upper" : "PT28S",
+                        "lower" : "P28D",
+                        "upper" : "P28D",
                         "lowerIncluded" : true,
                         "upperIncluded" : true,
                         "lowerUnbounded" : false,
