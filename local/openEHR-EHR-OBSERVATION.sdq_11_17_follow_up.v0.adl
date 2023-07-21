@@ -1,0 +1,538 @@
+archetype (adl_version=1.4; uid=d0e6eae7-1faf-4c09-92ce-1e302b11a76d)
+	openEHR-EHR-OBSERVATION.sdq_11_17_follow_up.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2023-07-21">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"d0b4c2de-86a3-3678-83e5-671413366984">
+		["MD5-CAM-1.0.1"] = <"941e564969f7f85e81c9aaa574160ddc">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- sdq_11_17_follow_up
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Jeg prøver å være hyggelig mot andre. Jeg bryr meg om hva de føler
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Jeg er rastløs. Jeg kan ikke være lenge i ro
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Jeg har ofte hodepine, vondt i magen eller kvalme
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Jeg deler gjerne med andre (mat, spill, andre ting)
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Jeg blir ofte sint og har kort lunte
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Jeg er ofte for meg selv. Jeg gjør som regel ting alene
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {    -- Jeg gjør som regel det jeg får beskjed om
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Jeg bekymrer meg mye
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Jeg stiller opp hvis noen er såret, lei seg eller føler seg dårlig
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Jeg er stadig urolig eller i bevegelse
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Jeg har en eller flere gode venner
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Jeg slåss mye. Jeg kan få andre til å gjøre det jeg vil
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Jeg er ofte lei meg, nedfor eller på gråten
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {    -- Jeg blir som regel likt av andre på min alder
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..1} matches {    -- Jeg blir lett distrahert, jeg synes det er vanskelig å konsentrere meg
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Jeg blir nervøs i nye situasjoner. Jeg blir lett usikker
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0023] occurrences matches {0..1} matches {    -- Jeg er snill mot de som er yngre enn meg
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {    -- Jeg blir ofte beskyldt for å lyve eller jukse
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0025] occurrences matches {0..1} matches {    -- Andre barn eller unge plager eller mobber meg
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0026] occurrences matches {0..1} matches {    -- Jeg tilbyr meg ofte å hjelpe andre (foreldre, lærere, andre barn/unge)
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0027] occurrences matches {0..1} matches {    -- Jeg tenker meg om før jeg handler (gjør noe)
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {    -- Jeg tar ting som ikke er mine hjemme, på skolen eller andre steder
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0029] occurrences matches {0..1} matches {    -- Jeg kommer bedre overens med voksne enn de på min egen alder
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0030] occurrences matches {0..1} matches {    -- Jeg er redd for mye, jeg blir lett skremt
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0031] occurrences matches {0..1} matches {    -- Jeg fullfører oppgaver. Jeg er god til å konsentrere meg
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007]
+										}
+									}
+									ELEMENT[at0032] occurrences matches {0..1} matches {    -- Har du andre kommentarer eller bekymringer ?
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0033] occurrences matches {0..1} matches {    -- Etter at du kom til poliklinikken, er problemene dine blitt:
+										value matches {
+											1|[local::at0034],
+											2|[local::at0035],
+											3|[local::at0036],
+											4|[local::at0037],
+											5|[local::at0038]
+										}
+									}
+									ELEMENT[at0039] occurrences matches {0..1} matches {    -- Har det å komme til poliklinikken hjulpet på andre måter, for eksempel ved informasjon eller ved at problemene er blitt lettere å leve med?
+										value matches {
+											1|[local::at0040],
+											2|[local::at0041],
+											3|[local::at0042],
+											4|[local::at0043]
+										}
+									}
+									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Har du den siste måneden hatt vansker på ett eller flere av følgende områder: med følelser, konsentrasjon, oppførsel eller med å komme overens med andre mennesker?
+										value matches {
+											1|[local::at0045],
+											2|[local::at0046],
+											3|[local::at0047],
+											4|[local::at0048]
+										}
+									}
+									ELEMENT[at0049] occurrences matches {0..1} matches {    -- Forstyrrer eller plager vanskene deg?
+										value matches {
+											1|[local::at0040],
+											2|[local::at0041],
+											3|[local::at0042],
+											4|[local::at0043]
+										}
+									}
+									CLUSTER[at0050] occurrences matches {0..1} matches {    -- Virker vanskene inn på livet ditt på noen av disse områdene?
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0051] occurrences matches {0..1} matches {    -- HJEMME / I FAMILIEN
+												value matches {
+													1|[local::at0040],
+													2|[local::at0041],
+													3|[local::at0042],
+													4|[local::at0043]
+												}
+											}
+											ELEMENT[at0052] occurrences matches {0..1} matches {    -- FORHOLD TIL VENNER
+												value matches {
+													1|[local::at0040],
+													2|[local::at0041],
+													3|[local::at0042],
+													4|[local::at0043]
+												}
+											}
+											ELEMENT[at0053] occurrences matches {0..1} matches {    -- LÆRING PÅ SKOLEN
+												value matches {
+													1|[local::at0040],
+													2|[local::at0041],
+													3|[local::at0042],
+													4|[local::at0043]
+												}
+											}
+											ELEMENT[at0054] occurrences matches {0..1} matches {    -- FRITIDSAKTIVITETER
+												value matches {
+													1|[local::at0040],
+													2|[local::at0041],
+													3|[local::at0042],
+													4|[local::at0043]
+												}
+											}
+										}
+									}
+									ELEMENT[at0055] occurrences matches {0..1} matches {    -- Er vanskene en belastning for de rundt deg (familie, venner, lærere osv.)?
+										value matches {
+											1|[local::at0040],
+											2|[local::at0041],
+											3|[local::at0042],
+											4|[local::at0043]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"sdq_11_17_follow_up">
+					description = <"sdq_11_17_follow_up">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Jeg prøver å være hyggelig mot andre. Jeg bryr meg om hva de føler">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Stemmer ikke">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Stemmer delvis">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Stemmer helt">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Jeg er rastløs. Jeg kan ikke være lenge i ro">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Jeg har ofte hodepine, vondt i magen eller kvalme">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Jeg deler gjerne med andre (mat, spill, andre ting)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Jeg blir ofte sint og har kort lunte">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Jeg er ofte for meg selv. Jeg gjør som regel ting alene">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Jeg gjør som regel det jeg får beskjed om">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Jeg bekymrer meg mye">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Jeg stiller opp hvis noen er såret, lei seg eller føler seg dårlig">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Jeg er stadig urolig eller i bevegelse">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Jeg har en eller flere gode venner">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Jeg slåss mye. Jeg kan få andre til å gjøre det jeg vil">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Jeg er ofte lei meg, nedfor eller på gråten">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Jeg blir som regel likt av andre på min alder">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Jeg blir lett distrahert, jeg synes det er vanskelig å konsentrere meg">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Jeg blir nervøs i nye situasjoner. Jeg blir lett usikker">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Jeg er snill mot de som er yngre enn meg">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Jeg blir ofte beskyldt for å lyve eller jukse">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Andre barn eller unge plager eller mobber meg">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Jeg tilbyr meg ofte å hjelpe andre (foreldre, lærere, andre barn/unge)">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Jeg tenker meg om før jeg handler (gjør noe)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Jeg tar ting som ikke er mine hjemme, på skolen eller andre steder">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Jeg kommer bedre overens med voksne enn de på min egen alder">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Jeg er redd for mye, jeg blir lett skremt">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Jeg fullfører oppgaver. Jeg er god til å konsentrere meg">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Har du andre kommentarer eller bekymringer ?">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Etter at du kom til poliklinikken, er problemene dine blitt:">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Mye verre">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Litt verre">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Omtrent som før">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Litt bedre">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Mye bedre">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Har det å komme til poliklinikken hjulpet på andre måter, for eksempel ved informasjon eller ved at problemene er blitt lettere å leve med?">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Ikke i det hele tatt">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Bare litt">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"En god del">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Mye">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Har du den siste måneden hatt vansker på ett eller flere av følgende områder: med følelser, konsentrasjon, oppførsel eller med å komme overens med andre mennesker?">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Nei">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Ja - små vansker">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Ja - tydelige vansker">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Ja - alvorlige vansker">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Forstyrrer eller plager vanskene deg?">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Virker vanskene inn på livet ditt på noen av disse områdene?">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"HJEMME / I FAMILIEN">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"FORHOLD TIL VENNER">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"LÆRING PÅ SKOLEN">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"FRITIDSAKTIVITETER">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Er vanskene en belastning for de rundt deg (familie, venner, lærere osv.)?">
+					description = <"">
+				>
+			>
+		>
+	>
