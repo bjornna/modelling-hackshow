@@ -27,7 +27,37 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"1a86e171-da6c-34b7-8638-783e4024b232">
-		["MD5-CAM-1.0.1"] = <"3cc2689533b060efe3a2b7f153e07cbd">
+		["references"] = <"From \"Cognitive Behavior Therapy and Eating Disorders\" by Christopher G. Fairburn 
+Copyright 2008 by Kristin Bohn and Christopher Fairburn
+
+Original English version is available online at: www.psych.ox.ac.uk/credo/cbt_and_eating_disorders
+
+Norsk godkjent oversettelse v/ D. L. Reas og Ø. Rø ved Regional avdeling for spiseforstyrrelser (RASP),
+Oslo universitetssykehus HF, Ullevål.
+September 2008
+
+https://oslo-universitetssykehus.no/seksjon/regional-kompetansetjeneste-for-spiseforstyrrelser/Documents/RASP%3B%20EDE-Q_NORSK.pdf
+
+
+Litteratur: 
+Luce, K. H. & Crowther, J. H. (1999). The reliability of the Eating Disorder Examination--Self-Report Questionnaire Version (EDE-Q). International Journal of Eating Disorders, 25, 349-351.
+
+Carter, J. C., Stewart, D. A. & Fairburn, C. G. (2001). Eating disorder examination questionnaire: Norms for young adolescent girls. Behaviour Research and Therapy, 39, 625-632.
+
+Fairburn C. G (2008) Cognitive Behavior Therapy and Eating Disorders, Guilford Press, New York.
+
+Ro O, Reas DL, Lask B. (2010). Norms for the Eating Disorder Examination Questionnaire among female university students in Norway. Nordic journal of psychiatry, 64, 428-32.
+
+Berg KC, Peterson CB, Frazier P, Crow SJ. (2012). Psychometric evaluation of the eating disorder examination and eating disorder examination-questionnaire: a systematic review of the literature. International Journal of Eating Disorders, 45, 428-38.
+
+Ro O, Reas DL, Rosenvinge J. (2012). The impact of age and BMI on Eating Disorder Examination Questionnaire (EDE-Q) scores in a community sample. Eating behaviors, 13, 158-61.
+
+Reas DL, Overas M, Ro O. (2012). Norms for the Eating Disorder Examination Questionnaire (EDE-Q) among high school and university men. Eating disorders, 20, 437-43.
+
+Ro O, Reas DL, Stedal K. (2015). Eating Disorder Examination Questionnaire (EDE-Q) in Norwegian Adults: Discrimination between Female Controls and Eating Disorder Patients. European Eating Disorders Review, 23, 408-12.
+
+Dahlgren CL, Stedal K, Ro O. (2017). Eating Disorder Examination Questionnaire (EDE-Q) and Clinical Impairment Assessment (CIA): clinical norms and functional impairment in male and female adults with eating disorders. Nordic journal of psychiatry, 71, 256-61.">
+		["MD5-CAM-1.0.1"] = <"0d35eca04589b3c00c39db8d11ec92e9">
 	>
 
 definition
@@ -374,6 +404,70 @@ definition
 											}
 										}
 									}
+									CLUSTER[at0072] occurrences matches {0..1} matches {    -- Beregninger
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0073] occurrences matches {0..1} matches {    -- Restriksjon
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::380]>
+														list = <
+															["1"] = <
+																units = <"1">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0074] occurrences matches {0..1} matches {    -- Bekymring for spising
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::380]>
+														list = <
+															["1"] = <
+																units = <"1">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0075] occurrences matches {0..1} matches {    -- Bekymring for vekt
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::380]>
+														list = <
+															["1"] = <
+																units = <"1">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0076] occurrences matches {0..1} matches {    -- Bekymring for figur
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::380]>
+														list = <
+															["1"] = <
+																units = <"1">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0077] occurrences matches {0..1} matches {    -- Global EDE-Q skår
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::380]>
+														list = <
+															["1"] = <
+																units = <"1">
+															>
+														>
+													>
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -653,6 +747,30 @@ spørsmålene kun handler om de siste fire ukene (28 dagene). ">
 				>
 				["at0071"] = <
 					text = <"Veldig mye">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Beregninger">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Restriksjon">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Bekymring for spising">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Bekymring for vekt">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Bekymring for figur">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"Global EDE-Q skår">
 					description = <"">
 				>
 			>
