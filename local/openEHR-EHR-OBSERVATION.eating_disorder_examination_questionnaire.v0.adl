@@ -1,0 +1,660 @@
+archetype (adl_version=1.4; uid=ee91db81-77b6-429a-9807-740e2245116b)
+	openEHR-EHR-OBSERVATION.eating_disorder_examination_questionnaire.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2023-07-21">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"1a86e171-da6c-34b7-8638-783e4024b232">
+		["MD5-CAM-1.0.1"] = <"3cc2689533b060efe3a2b7f153e07cbd">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Eating Disorder Examination Questionnaire (EDE-Q 6.0)
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									CLUSTER[at0023] occurrences matches {0..1} matches {    -- Spørsmål 1-12
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0004] occurrences matches {0..1} matches {    -- 1. Har du bevisst prøvd å begrense mengden mat du spiser for å påvirke din figur eller vekt (uavhengig av om du har klart det eller ikke)?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- 2.  Har du i lengre perioder (8 våkne timer eller mer) ikke spist noe i det hele tatt for å påvirke din figur eller vekt?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0013] occurrences matches {0..1} matches {    -- 3. Har du prøvd å utelukke noen typer mat du liker, for å påvirke din figur eller vekt (uavhengig av om du har klart det eller ikke)?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0014] occurrences matches {0..1} matches {    -- 4. Har du prøvd å følge bestemte regler for hva eller hvordan du spiser (f.eks. en kalorigrense) for å påvirke din figur eller vekt (uavhengig av om du har klart det eller ikke)?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0015] occurrences matches {0..1} matches {    -- 5. Har du hatt et klart ønske om å ha tom mage for å påvirke din figur eller vekt?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0016] occurrences matches {0..1} matches {    -- 6.  Har du hatt et klart ønske om å ha en helt flat mage?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0017] occurrences matches {0..1} matches {    -- 7. Har du opplevd at tanker om mat, spising eller kalorier har gjort det veldig vanskelig å konsentrere deg om ting du er interessert i (f.eks. å arbeide, følge en samtale eller lese)?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0018] occurrences matches {0..1} matches {    -- 8.  Har du opplevd at tanker om figur eller vekt har gjort det veldig vanskelig å konsentrere deg om ting du er interessert i (f.eks. å arbeide, følge en samtale eller lese)?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0019] occurrences matches {0..1} matches {    -- 9. Har du hatt en klar frykt for å miste kontroll over spisingen din?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0020] occurrences matches {0..1} matches {    -- 10. Har du hatt en klar frykt for at du kan gå opp i vekt?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0021] occurrences matches {0..1} matches {    -- 11. Har du følt deg tykk?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0022] occurrences matches {0..1} matches {    -- 12. Har du hatt et sterkt ønske om å gå ned i vekt?
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+										}
+									}
+									CLUSTER[at0024] occurrences matches {0..1} matches {    -- Spørsmål 13-18
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0025] occurrences matches {0..1} matches {    -- 13. I løpet av de siste 28 dagene, hvor mange ganger har du spist det andre ville betraktet som en uvanlig stor mengde mat (omstendighetene tatt i betraktning)?
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0026] occurrences matches {0..1} matches {    -- 14. Ved hvor mange av disse episodene hadde du en følelse av å ha mistet kontrollen over spisingen din (mens du spiste)?
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0027] occurrences matches {0..1} matches {    -- 15. I løpet av de siste 28 dagene, hvor mange DAGER har slike episoder med overspising forekommet (dvs. der du har spist uvanlig store mengder mat og hatt en følelse av å miste kontrollen mens du spiste)?
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0028] occurrences matches {0..1} matches {    -- 16. I løpet av de siste 28 dagene, hvor mange ganger har du kastet opp for å kontrollere din figur eller vekt?
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0029] occurrences matches {0..1} matches {    -- 17. I løpet av de siste 28 dagene, hvor mange ganger har du brukt avføringsmidler for å kontrollere din figur eller vekt?
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0030] occurrences matches {0..1} matches {    -- 18. I løpet av de siste 28 dagene, hvor mange ganger har du følt deg drevet eller tvunget til å trene for å kontrollere din vekt, figur eller fettmengde, eller for å forbrenne kalorier?
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+										}
+									}
+									CLUSTER[at0031] occurrences matches {0..1} matches {    -- Spørsmål 19 -21
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0032] occurrences matches {0..1} matches {    -- 19. I løpet av de siste 28 dagene, hvor mange dager har du spist i hemmelighet (i skjul)? …tell ikke med overspisingsepisoder.
+												value matches {
+													0|[local::at0005],
+													1|[local::at0006],
+													2|[local::at0007],
+													3|[local::at0008],
+													4|[local::at0009],
+													5|[local::at0010],
+													6|[local::at0011]
+												}
+											}
+											ELEMENT[at0033] occurrences matches {0..1} matches {    -- 20. Hvor mange av de gangene du har spist, har du hatt skyldfølelse (følt at du har gjort noe galt) fordi det kan påvirke din figur eller vekt? …tell ikke med overspisingsepisoder
+												value matches {
+													0|[local::at0034],
+													1|[local::at0035],
+													2|[local::at0036],
+													3|[local::at0037],
+													4|[local::at0038],
+													5|[local::at0039],
+													6|[local::at0040]
+												}
+											}
+											ELEMENT[at0041] occurrences matches {0..1} matches {    -- 21. I løpet av de siste 28 dagene, hvor bekymret har du vært for at andre mennesker ser deg spise? …tell ikke med overspisingsepisoder.
+												value matches {
+													0|[local::at0065],
+													1|[local::at0066],
+													2|[local::at0067],
+													3|[local::at0068],
+													4|[local::at0069],
+													5|[local::at0070],
+													6|[local::at0071]
+												}
+											}
+										}
+									}
+									CLUSTER[at0046] occurrences matches {0..1} matches {    -- Spørsmål 22 til 28
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0047] occurrences matches {0..1} matches {    -- 22.  Har vekten din påvirket hvordan du tenker om (bedømmer) deg selv som person?
+												value matches {
+													0|[local::at0065],
+													1|[local::at0066],
+													2|[local::at0067],
+													3|[local::at0068],
+													4|[local::at0069],
+													5|[local::at0070],
+													6|[local::at0071]
+												}
+											}
+											ELEMENT[at0048] occurrences matches {0..1} matches {    -- 23. Har figuren din påvirket hvordan du tenker om (bedømmer) deg selv som person?
+												value matches {
+													0|[local::at0065],
+													1|[local::at0066],
+													2|[local::at0067],
+													3|[local::at0068],
+													4|[local::at0069],
+													5|[local::at0070],
+													6|[local::at0071]
+												}
+											}
+											ELEMENT[at0049] occurrences matches {0..1} matches {    -- 24. Hvor opprørt ville du bli hvis du ble bedt om å veie deg en gang i uken (ikke mer, ikke mindre) de neste fire ukene?
+												value matches {
+													0|[local::at0065],
+													1|[local::at0066],
+													2|[local::at0067],
+													3|[local::at0068],
+													4|[local::at0069],
+													5|[local::at0070],
+													6|[local::at0071]
+												}
+											}
+											ELEMENT[at0050] occurrences matches {0..1} matches {    -- 25. Hvor misfornøyd har du vært med vekten din?
+												value matches {
+													0|[local::at0065],
+													1|[local::at0066],
+													2|[local::at0067],
+													3|[local::at0068],
+													4|[local::at0069],
+													5|[local::at0070],
+													6|[local::at0071]
+												}
+											}
+											ELEMENT[at0051] occurrences matches {0..1} matches {    -- 26. Hvor misfornøyd har du vært med figuren din?
+												value matches {
+													0|[local::at0065],
+													1|[local::at0066],
+													2|[local::at0067],
+													3|[local::at0068],
+													4|[local::at0069],
+													5|[local::at0070],
+													6|[local::at0071]
+												}
+											}
+											ELEMENT[at0052] occurrences matches {0..1} matches {    -- 27.  Hvor mye ubehag har du følt ved å se kroppen din (f.eks. når du ser figuren din i speilet, reflektert i et butikkvindu, ved klesskift, eller når du bader eller dusjer)?
+												value matches {
+													0|[local::at0065],
+													1|[local::at0066],
+													2|[local::at0067],
+													3|[local::at0068],
+													4|[local::at0069],
+													5|[local::at0070],
+													6|[local::at0071]
+												}
+											}
+											ELEMENT[at0053] occurrences matches {0..1} matches {    -- 28. Hvor mye ubehag har du følt ved at andre ser figuren din (f.eks. i offentlige omkledningsrom, når du svømmer, eller når du har på deg trange klær)?
+												value matches {
+													0|[local::at0065],
+													1|[local::at0066],
+													2|[local::at0067],
+													3|[local::at0068],
+													4|[local::at0069],
+													5|[local::at0070],
+													6|[local::at0071]
+												}
+											}
+										}
+									}
+									CLUSTER[at0054] occurrences matches {0..1} matches {    -- Andre opplysninger
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0055] occurrences matches {0..1} matches {    -- Hva er din nåværende vekt?
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::124]>
+														list = <
+															["1"] = <
+																units = <"kg">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0056] occurrences matches {0..1} matches {    -- Hvor høy er du?
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::122]>
+														list = <
+															["1"] = <
+																units = <"cm">
+															>
+														>
+													>
+												}
+											}
+											CLUSTER[at0057] occurrences matches {0..1} matches {    -- Kvinne
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0058] occurrences matches {0..1} matches {    -- Har noen menstruasjoner uteblitt de siste 3-4 månedene?
+														value matches {
+															DV_BOOLEAN matches {*}
+														}
+													}
+													ELEMENT[at0059] occurrences matches {0..1} matches {    -- Hvis ja, hvor mange?
+														value matches {
+															DV_COUNT matches {*}
+														}
+													}
+													ELEMENT[at0060] occurrences matches {0..1} matches {    -- Har du brukt p-piller, p-plaster, p-ring, eller lignende?
+														value matches {
+															DV_BOOLEAN matches {*}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE matches {*}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Eating Disorder Examination Questionnaire (EDE-Q 6.0)">
+					description = <"Instruksjoner: Dette spørreskjema handler kun om de siste fire ukene (28 dager). Les
+hvert spørsmål nøye. Svar på alle spørsmålene.
+Spørsmål 1 til 12: Tegn en sirkel rundt det tallet til høyre som du synes passer best. Husk at
+spørsmålene kun handler om de siste fire ukene (28 dagene). ">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"1. Har du bevisst prøvd å begrense mengden mat du spiser for å påvirke din figur eller vekt (uavhengig av om du har klart det eller ikke)?">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Ingen dager">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"1-5 dager">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"6-12 dager">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"13-15 dager">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"16-22 dager">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"23-27 dager">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Alle dager">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"2.  Har du i lengre perioder (8 våkne timer eller mer) ikke spist noe i det hele tatt for å påvirke din figur eller vekt?">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"3. Har du prøvd å utelukke noen typer mat du liker, for å påvirke din figur eller vekt (uavhengig av om du har klart det eller ikke)?">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"4. Har du prøvd å følge bestemte regler for hva eller hvordan du spiser (f.eks. en kalorigrense) for å påvirke din figur eller vekt (uavhengig av om du har klart det eller ikke)?">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"5. Har du hatt et klart ønske om å ha tom mage for å påvirke din figur eller vekt?">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"6.  Har du hatt et klart ønske om å ha en helt flat mage?">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"7. Har du opplevd at tanker om mat, spising eller kalorier har gjort det veldig vanskelig å konsentrere deg om ting du er interessert i (f.eks. å arbeide, følge en samtale eller lese)?">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"8.  Har du opplevd at tanker om figur eller vekt har gjort det veldig vanskelig å konsentrere deg om ting du er interessert i (f.eks. å arbeide, følge en samtale eller lese)?">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"9. Har du hatt en klar frykt for å miste kontroll over spisingen din?">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"10. Har du hatt en klar frykt for at du kan gå opp i vekt?">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"11. Har du følt deg tykk?">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"12. Har du hatt et sterkt ønske om å gå ned i vekt?">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Spørsmål 1-12">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Spørsmål 13-18">
+					description = <"Fyll inn passende antall i boksene til høyre. 
+
+Husk at spørsmålene kun handler om de siste fire ukene (28 dagene).">
+				>
+				["at0025"] = <
+					text = <"13. I løpet av de siste 28 dagene, hvor mange ganger har du spist det andre ville betraktet som en uvanlig stor mengde mat (omstendighetene tatt i betraktning)?">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"14. Ved hvor mange av disse episodene hadde du en følelse av å ha mistet kontrollen over spisingen din (mens du spiste)?">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"15. I løpet av de siste 28 dagene, hvor mange DAGER har slike episoder med overspising forekommet (dvs. der du har spist uvanlig store mengder mat og hatt en følelse av å miste kontrollen mens du spiste)?">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"16. I løpet av de siste 28 dagene, hvor mange ganger har du kastet opp for å kontrollere din figur eller vekt?">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"17. I løpet av de siste 28 dagene, hvor mange ganger har du brukt avføringsmidler for å kontrollere din figur eller vekt?">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"18. I løpet av de siste 28 dagene, hvor mange ganger har du følt deg drevet eller tvunget til å trene for å kontrollere din vekt, figur eller fettmengde, eller for å forbrenne kalorier?">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Spørsmål 19 -21">
+					description = <"Tegn en sirkel rundt det tallet som du synes passer best. Vær oppmerksom
+på at i disse spørsmålene brukes begrepet ”overspisingsepisode” om å spise det andre ville
+synes var en uvanlig stor mengde mat i den situasjonen du var i, samtidig med en følelse av å
+ha mistet kontroll over spisingen. ">
+				>
+				["at0032"] = <
+					text = <"19. I løpet av de siste 28 dagene, hvor mange dager har du spist i hemmelighet (i skjul)? …tell ikke med overspisingsepisoder.">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"20. Hvor mange av de gangene du har spist, har du hatt skyldfølelse (følt at du har gjort noe galt) fordi det kan påvirke din figur eller vekt? …tell ikke med overspisingsepisoder">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Ingen av gangene">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Noen få ganger">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Færre enn halvparten">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Halvparten">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Mer enn halvparten">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"De fleste gangene">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Hver gang">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"21. I løpet av de siste 28 dagene, hvor bekymret har du vært for at andre mennesker ser deg spise? …tell ikke med overspisingsepisoder.">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Spørsmål 22 til 28">
+					description = <"Tegn en sirkel rundt det tallet til høyre som du synes passer best. Husk at
+spørsmålene kun handler om de siste fire ukene (28 dagene). ">
+				>
+				["at0047"] = <
+					text = <"22.  Har vekten din påvirket hvordan du tenker om (bedømmer) deg selv som person?">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"23. Har figuren din påvirket hvordan du tenker om (bedømmer) deg selv som person?">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"24. Hvor opprørt ville du bli hvis du ble bedt om å veie deg en gang i uken (ikke mer, ikke mindre) de neste fire ukene?">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"25. Hvor misfornøyd har du vært med vekten din?">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"26. Hvor misfornøyd har du vært med figuren din?">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"27.  Hvor mye ubehag har du følt ved å se kroppen din (f.eks. når du ser figuren din i speilet, reflektert i et butikkvindu, ved klesskift, eller når du bader eller dusjer)?">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"28. Hvor mye ubehag har du følt ved at andre ser figuren din (f.eks. i offentlige omkledningsrom, når du svømmer, eller når du har på deg trange klær)?">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Andre opplysninger">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Hva er din nåværende vekt?">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Hvor høy er du?">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Kvinne">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Har noen menstruasjoner uteblitt de siste 3-4 månedene?">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Hvis ja, hvor mange?">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Har du brukt p-piller, p-plaster, p-ring, eller lignende?">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"Ikke i det hele tatt">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"-">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Litt">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"-">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Ganske mye">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"-">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Veldig mye">
+					description = <"">
+				>
+			>
+		>
+	>
