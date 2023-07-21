@@ -1,0 +1,370 @@
+archetype (adl_version=1.4; uid=2eb133d3-79eb-447f-96c0-a8f114a56429)
+	openEHR-EHR-OBSERVATION.clinical_impairment_assessment_questionnaire.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2023-07-21">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"27f6ef8a-f5ce-3655-b3a1-cd559a1971cd">
+		["references"] = <"From \"Cognitive Behavior Therapy and Eating Disorders\" by Christopher G. Fairburn
+Original English version is available online at: www.psych.ox.ac.uk/credo/cbt_and_eating_disorders
+Copyright 2008 by Kristin Bohn and Christopher Fairburn
+
+Norsk godkjent oversettelse v/ D. L. Reas og Ø. Rø ved Regional avdeling for spiseforstyrrelser (RASP),
+Oslo Universitetssykehus HF, Ullevål
+September 2008 
+
+Litteratur: 
+Bohn K, Doll HA, Cooper Z, O'Connor M, Palmer RL, Fairburn CG. (2008). The measurement of impairment due to eating disorder psychopathology. Behaviour Research and Therapy, 46, 1105-10.
+
+Reas DL, Ro O, Kapstad H, Lask B. (2010). Psychometric properties of the clinical impairment assessment: norms for young adult women. International Journal of Eating Disorders, 43, 72-6.
+
+Reas DL, Stedal K, Lindvall Dahlgren C, Ro O. (2016). Impairment due to eating disorder pathology: Identifying the cut-off score on the Clinical Impairment Assessment in a clinical and community sample. International Journal of Eating Disorders, 49, 635-8.
+
+Dahlgren CL, Stedal K, Ro O. (2017). Eating Disorder Examination Questionnaire (EDE-Q) and Clinical Impairment Assessment (CIA): clinical norms and functional impairment in male and female adults with eating disorders. Nordic journal of psychiatry, 71, 256-61.">
+		["MD5-CAM-1.0.1"] = <"0f11a568bba2e93b07e6a06bed765b0f">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Clinical Impairment Assessment Questionnaire (CIA 3.0)
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					INTERVAL_EVENT[at0002] occurrences matches {0..*} matches {    -- I løpet av de siste 28 dagene, i hvilken grad har dine spisevaner, trening, eller følelser knyttet til din spising, figur eller vekt….
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- 1. …. gjort det vanskelig å konsentrere deg?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- 2. …. gjort at du har følt deg kritisk til deg selv?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- 3. … hindret deg i å gå ut sammen med andre?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- 4. … påvirket din prestasjon i jobb eller utdanning?  (hvis aktuelt)
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {    -- 5. … gjort deg glemsk?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {    -- 6. …. påvirket din evne til å ta beslutninger i  hverdagen?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- 7. … skapt vansker ved måltider med familie eller  venner?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {    -- 8.  …. gjort deg opprørt?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- 9. …. gjort at du har skammet deg over deg selv?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- 10. …. gjort det vanskelig å spise ute med andre?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- 11. …. gitt deg skyldfølelse?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0019] occurrences matches {0..1} matches {    -- 12. …vanskeliggjort eller hindret deg i å gjøre ting  du pleide å ha glede av?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {    -- 13. … gjort deg distrè/åndsfraværende?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..1} matches {    -- 14. … fått deg til å føle deg mislykket?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {    -- 15. …hatt negativ innvirkning på ditt forhold til  andre?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0023] occurrences matches {0..1} matches {    -- 16. … gjort deg bekymret?
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008]
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {    -- Global CIA skår
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									CLUSTER[at0024] occurrences matches {0..1} matches {    -- Subskaler
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0025] occurrences matches {0..1} matches {    -- Personlig svekkelse
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0026] occurrences matches {0..1} matches {    -- Sosial svekkelse
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0027] occurrences matches {0..1} matches {    -- Kognitiv svekkelse
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						math_function matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[openehr::640]
+								}
+							}
+						}
+						width matches {
+							DV_DURATION matches {
+								value matches {PT28S}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Clinical Impairment Assessment Questionnaire (CIA 3.0)">
+					description = <"CIA er et 16 spørsmålsskjema – og er et mål på alvorligheten av den psykososiale svekkelsen på grunn av spiseforstyrrelsen. Skjemaet skal fylles ut direkte etter utfylling av EDE-Q.
+
+Resultatet av denne testen kan brukes som en enkel måte å vurdere hvordan spiseforstyrrelsene innvirker på dagliglivets fungering. Det tar kun noen minutter å besvare spørsmålene. CIA fokuserer på siste 28 dager og spørsmålene dekker følgende områder: kognitiv fungering, sosial fungering og personlig fungering. 
+
+Pasientene spørres, “I de siste 28 dager, i hvilken grad har din spising, trening eller dine følelser rundt spising, kroppsbilde og vekt influert ditt liv.”.
+
+Mange studier har funnet gode psykometriske egenskaper ved testen.
+
+Svaralternativene går fra “ikke i det hele tatt” til “mye”. Når man skal skåre spørreskjema tillegges svaralternativene følgende verdier: Ikke i det hele tatt = 0, Litt = 1, En god del = 2, Mye = 3
+
+Totalskåren (global CIA skår) regnes ut ved å legge sammen alle skårene og totalsum vil være mellom 0 og 48. Høyere skåre indikerer høyere grad av problemer. Hvis noen spørsmål ikke er besvart, erstattes ikke besvarte spørsmål med gjennomsnittskår av de besvarte spørsmålene.
+
+Det er vanlig å bruke kun global CIA skår, men subskalaskår kan utregnes.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"I løpet av de siste 28 dagene, i hvilken grad har dine spisevaner, trening, eller følelser knyttet til din spising, figur eller vekt….">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"1. …. gjort det vanskelig å konsentrere deg?">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Ikke i det hele tatt">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Litt">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"En god del">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Mye">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"2. …. gjort at du har følt deg kritisk til deg selv?">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"3. … hindret deg i å gå ut sammen med andre?">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"4. … påvirket din prestasjon i jobb eller utdanning?  (hvis aktuelt)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"5. … gjort deg glemsk?">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"6. …. påvirket din evne til å ta beslutninger i  hverdagen?">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"7. … skapt vansker ved måltider med familie eller  venner?">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"8.  …. gjort deg opprørt?">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"9. …. gjort at du har skammet deg over deg selv?">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"10. …. gjort det vanskelig å spise ute med andre?">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"11. …. gitt deg skyldfølelse?">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"12. …vanskeliggjort eller hindret deg i å gjøre ting  du pleide å ha glede av?">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"13. … gjort deg distrè/åndsfraværende?">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"14. … fått deg til å føle deg mislykket?">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"15. …hatt negativ innvirkning på ditt forhold til  andre?">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"16. … gjort deg bekymret?">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Subskaler">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Personlig svekkelse">
+					description = <"">
+					comment = <"Sum skår av spørsmål 2,8,9,11,14 og 16 ">
+				>
+				["at0026"] = <
+					text = <"Sosial svekkelse">
+					description = <"">
+					comment = <"Sum skår av spørsmål 3,7,10 og 12 ">
+				>
+				["at0027"] = <
+					text = <"Kognitiv svekkelse">
+					description = <"">
+					comment = <"Sum skår av spørsmål 1,4,5,6 og13">
+				>
+				["at0028"] = <
+					text = <"Global CIA skår">
+					description = <"Totalskåren (global CIA skår) regnes ut ved å legge sammen alle skårene og totalsum vil være mellom 0 og 48. Høyere skåre indikerer høyere grad av problemer. Hvis noen spørsmål ikke er besvart, erstattes ikke besvarte spørsmål med gjennomsnittskår av de besvarte spørsmålene.
+
+Det er vanlig å bruke kun global CIA skår, men subskalaskår kan utregnes.">
+				>
+			>
+		>
+	>
