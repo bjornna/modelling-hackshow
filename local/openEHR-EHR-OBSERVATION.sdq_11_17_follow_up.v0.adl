@@ -27,7 +27,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"d0b4c2de-86a3-3678-83e5-671413366984">
-		["MD5-CAM-1.0.1"] = <"9978d4c3e46a54d70ec4167f2ca5ff2c">
+		["MD5-CAM-1.0.1"] = <"5bab6e3706e14081f45820cbb2225e90">
 	>
 
 definition
@@ -219,6 +219,29 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
+									CLUSTER[at0057] occurrences matches {0..1} matches {    -- Impact
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0058] occurrences matches {0..1} matches {    -- Samlet, synes du at du har vansker på ett eller flere av følgende områder: med følelser, konsentrasjon, oppførsel eller med å komme overens med andre mennesker ?
+												value matches {
+													1|[local::at0045],
+													2|[local::at0046],
+													3|[local::at0047],
+													4|[local::at0048]
+												}
+											}
+											ELEMENT[at0059] occurrences matches {0..1} matches {    -- Hvor lenge har disse vanskene vært tilstede?
+												value matches {
+													1|[local::at0060],
+													2|[local::at0061],
+													3|[local::at0062],
+													4|[local::at0063]
+												}
+											}
+										}
+									}
+									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002]/data[at0003]/items[at0056]/items[at0049]
+									use_node CLUSTER occurrences matches {0..1} /data[at0001]/events[at0002]/data[at0003]/items[at0056]/items[at0050]
+									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002]/data[at0003]/items[at0056]/items[at0055]
 									CLUSTER[at0056] occurrences matches {0..1} matches {    -- Oppfølging
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0033] occurrences matches {0..1} matches {    -- Etter at du kom til poliklinikken, er problemene dine blitt:
@@ -544,6 +567,46 @@ ontology
 					text = <"Oppfølging">
 					description = <"">
 					comment = <"Benyttes ved oppfølgende undersøkelse. ">
+				>
+				["at0057"] = <
+					text = <"Impact">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Samlet, synes du at du har vansker på ett eller flere av følgende områder: med følelser, konsentrasjon, oppførsel eller med å komme overens med andre mennesker ?">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Hvor lenge har disse vanskene vært tilstede?">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Mindre enn en måned">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"1-5 måneder">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"6-12 måneder">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Mer enn ett år">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"ELEMENT">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"CLUSTER">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"ELEMENT">
+					description = <"">
 				>
 			>
 		>
