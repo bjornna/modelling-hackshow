@@ -27,7 +27,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"d0b4c2de-86a3-3678-83e5-671413366984">
-		["MD5-CAM-1.0.1"] = <"5bab6e3706e14081f45820cbb2225e90">
+		["MD5-CAM-1.0.1"] = <"6315c66e0082a8374fbaac61051b4727">
 	>
 
 definition
@@ -323,6 +323,55 @@ definition
 											}
 										}
 									}
+									CLUSTER[at0067] occurrences matches {0..1} matches {    -- Skåring
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0068] occurrences matches {0..1} matches {    -- Emosjonelle problemer
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0069] occurrences matches {0..1} matches {    -- Skala for oppførselsproblemer
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0070] occurrences matches {0..1} matches {    -- Skala for hyperaktivitet
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0071] occurrences matches {0..1} matches {    -- Problemer med jevnaldrende
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0072] occurrences matches {0..1} matches {    -- Prososial skala
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0073] occurrences matches {0..1} matches {    -- Eksternalisering
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0074] occurrences matches {0..1} matches {    -- Internalisering
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0075] occurrences matches {0..1} matches {    -- Total vanskelighetsscore
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0076] occurrences matches {0..1} matches {    -- Kategori
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -607,6 +656,48 @@ ontology
 				["at0066"] = <
 					text = <"ELEMENT">
 					description = <"">
+				>
+				["at0067"] = <
+					text = <"Skåring">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Emosjonelle problemer">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Skala for oppførselsproblemer">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Skala for hyperaktivitet">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Problemer med jevnaldrende">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Prososial skala">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Eksternalisering">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Internalisering">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Total vanskelighetsscore">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Kategori">
+					description = <"">
+					comment = <"Benytter ofte graderingen 
+Veldig høy, høy, Økt, Tett på gjennomsnittet">
 				>
 			>
 		>
