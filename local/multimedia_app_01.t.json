@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7e383adce5982518dd14a1e695d4224d",
+      "MD5-CAM-1.0.1" : "4808570dba58d6679f607831bf137a5a",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -842,6 +842,272 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "774007",
+                    "value" : "Hode-hals-regionen"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "12611008",
+                    "value" : "Tibia"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "12921003",
+                    "value" : "Pelvis"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "14742008",
+                    "value" : "Tykktarm"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "14975008",
+                    "value" : "Underarm"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "15497006",
+                    "value" : "Ovarium"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "15776009",
+                    "value" : "Pancreas"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "16982005",
+                    "value" : "Skulder"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "23416004",
+                    "value" : "Ulna"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "26893007",
+                    "value" : "Lyske"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "28231008",
+                    "value" : "Galleblære"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "30021000",
+                    "value" : "Legg"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "30315005",
+                    "value" : "Tynntarm"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "32361000",
+                    "value" : "Fossa poplitea"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "32849002",
+                    "value" : "Øsofagus"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "34707002",
+                    "value" : "Lever"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "35039007",
+                    "value" : "Uterus"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "40983000",
+                    "value" : "Overarm"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "45292006",
+                    "value" : "Vulva"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "46862004",
+                    "value" : "Glutealregionen"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "50496004",
+                    "value" : "Fossa cubiti"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "51299004",
+                    "value" : "Clavicula"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "56459004",
+                    "value" : "Fot"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "56873002",
+                    "value" : "Sternum"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "62413002",
+                    "value" : "Radius"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "64033007",
+                    "value" : "Nyre"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "64234005",
+                    "value" : "Patella"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "68367000",
+                    "value" : "Lår"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "69695003",
+                    "value" : "Ventrikkel"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "71341001",
+                    "value" : "Femur"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "72410000",
+                    "value" : "Mediastinum"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "72696002",
+                    "value" : "Kne"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "76752008",
+                    "value" : "Mamma"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "76784001",
+                    "value" : "Vagina"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "78904004",
+                    "value" : "Øvre truncus/thoraxvegg"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "78961009",
+                    "value" : "Milt"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "79601000",
+                    "value" : "Scapula"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "80891009",
+                    "value" : "Hjerte"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "82849001",
+                    "value" : "Retroperitoneum"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "85050009",
+                    "value" : "Humerus"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "85562004",
+                    "value" : "Hånd"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "87100004",
+                    "value" : "Ukjent topografi for primærtumor"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "87342007",
+                    "value" : "Fibula"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "89546000",
+                    "value" : "Kranium"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "89837001",
+                    "value" : "Urinblære"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "91397008",
+                    "value" : "Ansiktsknokkel"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "91470000",
+                    "value" : "Aksille"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "113197003",
+                    "value" : "Costa"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "127949000",
+                    "value" : "Albue"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "278915007",
+                    "value" : "Coccygis"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "303270005",
+                    "value" : "Lever/galleveier"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "421060004",
+                    "value" : "Columna"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "699698002",
+                    "value" : "Sacrum"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "822992007",
+                    "value" : "Nedre truncus/bukvegg"
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0012.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0006.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..*",
@@ -859,7 +1125,22 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Organ",
+            "description" : "Identifisering av det undersøkte organsystemet eller den anatomiske strukturen.",
+            "comment" : "Det anbefales å kode organsystem eller den anatomiske strukturen med en terminologi dersom mulig."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Beskrivelse av anatomien",
+            "description" : "Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.",
+            "comment" : "For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig."
+          }
+        },
         "pt-br" : { },
         "de" : { },
         "sv" : { },
