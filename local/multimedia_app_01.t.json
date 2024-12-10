@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "4808570dba58d6679f607831bf137a5a",
+      "MD5-CAM-1.0.1" : "e7c4502538dee2576d2db86c4eecb5a1",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -577,7 +577,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "occurrences" : "1..1",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -646,7 +647,14 @@
         "sl" : { },
         "es-ar" : { },
         "en" : { },
-        "nb" : { },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Funn ved bildeundersøkelse",
+            "description" : "Funn ved fysisk undersøkelse av en helsetjenestemottaker."
+          }
+        },
         "es" : { },
         "pt-br" : { },
         "zh-cn" : { },
