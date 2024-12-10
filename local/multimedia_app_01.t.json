@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "52955915cb083bec9b3d57cbaed57d1b",
+      "MD5-CAM-1.0.1" : "321b0821464d4e0434a7110e5c5cd394",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -592,7 +592,7 @@
                     "children" : [ {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
+                      "occurrences" : "0..*",
                       "nodeId" : "at0005.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
@@ -1314,6 +1314,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0010.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1325,6 +1326,13 @@
               "attributeTuples" : [ ]
             } ]
           } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0005.1",
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -1341,6 +1349,12 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0007.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -1352,7 +1366,14 @@
         "en" : { },
         "sv" : { },
         "de" : { },
-        "nb" : { },
+        "nb" : {
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Kommentar om bildet",
+            "description" : "Ytterligere fritekst om mediafilen som ikke dekkes av andre elementer."
+          }
+        },
         "nl" : { },
         "sk" : { },
         "pt-pt" : { }
