@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "828181633f0f93dd1c65ecdf0a0a0c9a",
+      "MD5-CAM-1.0.1" : "90f5453cbf9a648aeedb1904c98fc7df",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -596,6 +596,12 @@
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
                     }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0011.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
                       "occurrences" : "0..*",
@@ -654,6 +660,12 @@
         "es-ar" : { },
         "en" : { },
         "nb" : {
+          "at0011" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Kommentar",
+            "description" : "Eventuell kommentar som ikke er dekket av andre felter"
+          },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
@@ -666,6 +678,12 @@
             "text" : "Samlet vurdering av funn",
             "description" : "Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den kliniske undersøkelsen.",
             "comment" : "Koding med terminologi foretrekkes når mulig. For eksempel \"normal undersøkelse\" eller \"tympanisk membran perforasjon\"."
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "Kommentar",
+            "description" : "E"
           }
         },
         "es" : { },
