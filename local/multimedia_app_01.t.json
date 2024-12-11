@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7b6e0af4563c20ad13c960b9fd70f5d9",
+      "MD5-CAM-1.0.1" : "f5042085b1d3c19dffbc9a8e45a200f2",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1091,10 +1091,6 @@
                     "terminologyId" : "SNOMED-CT",
                     "code" : "85562004",
                     "value" : "Hånd"
-                  }, {
-                    "terminologyId" : "SNOMED-CT",
-                    "code" : "87100004",
-                    "value" : "Ukjent topografi for primærtumor"
                   }, {
                     "terminologyId" : "SNOMED-CT",
                     "code" : "87342007",
