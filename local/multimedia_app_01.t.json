@@ -9,7 +9,7 @@
       "organisation" : "DIPS AS",
       "email" : "bna@dips.no"
     },
-    "otherContributors" : [ ],
+    "otherContributors" : [ "Morten Hørthe <mho@dips.no>" ],
     "lifecycleState" : {
       "codeString" : "in_development"
     },
