@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "90f5453cbf9a648aeedb1904c98fc7df",
+      "MD5-CAM-1.0.1" : "48989a1d345be51cb9df9ea66851d82e",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -1187,7 +1187,7 @@
           "at0012.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0012.1",
-            "text" : "Beskrivelse av anatomien",
+            "text" : "Detaljer om funnsteder",
             "description" : "Identifisering av et enkelt fysisk sted enten på eller i menneskekroppen.",
             "comment" : "For eksempel undersøkelse av et spesifikt område på huden. Dersom den anatomiske lokaliseringen allerede er identifisert i elementet \"Undersøkt organsystem eller struktur\" er dette dataelementet overflødig."
           },
